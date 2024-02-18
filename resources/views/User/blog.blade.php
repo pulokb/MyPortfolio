@@ -32,7 +32,7 @@
                                     </div>
                                     <div class="elisc_tm_read_more">
                                         <a class="line_effect" href="#">Learn More<span><img class="svg"
-                                                    src="img/svg/rightArrow.svg" alt /></span></a>
+                                                    src="elisc/img/svg/rightArrow.svg" alt /></span></a>
                                     </div>
 
                                     <div class="news_hidden_details">
@@ -59,11 +59,11 @@
                                 </div>
                             </li>
                             <li>
-                                <img class="popup_image" src="img/news/2.jpg" alt />
+                                <img class="popup_image" src="elisc/img/news/2.jpg" alt />
                                 <div class="list_inner">
                                     <div class="info">
                                         <div class="meta">
-                                            <img class="svg" src="img/svg/calendar.svg" alt /> <span>April 01,
+                                            <img class="svg" src="elisc/img/svg/calendar.svg" alt /> <span>April 01,
                                                 2023</span>
                                         </div>
                                         <div class="title">
@@ -72,7 +72,7 @@
                                     </div>
                                     <div class="elisc_tm_read_more">
                                         <a class="line_effect" href="#">Learn More<span><img class="svg"
-                                                    src="img/svg/rightArrow.svg" alt /></span></a>
+                                                    src="elisc/img/svg/rightArrow.svg" alt /></span></a>
                                     </div>
 
                                     <div class="news_hidden_details">
@@ -99,11 +99,11 @@
                                 </div>
                             </li>
                             <li>
-                                <img class="popup_image" src="img/news/3.jpg" alt />
+                                <img class="popup_image" src="elisc/img/news/3.jpg" alt />
                                 <div class="list_inner">
                                     <div class="info">
                                         <div class="meta">
-                                            <img class="svg" src="img/svg/calendar.svg" alt /> <span>March 30,
+                                            <img class="svg" src="elisc/img/svg/calendar.svg" alt /> <span>March 30,
                                                 2023</span>
                                         </div>
                                         <div class="title">
@@ -112,7 +112,7 @@
                                     </div>
                                     <div class="elisc_tm_read_more">
                                         <a class="line_effect" href="#">Learn More<span><img class="svg"
-                                                    src="img/svg/rightArrow.svg" alt /></span></a>
+                                                    src="elisc/img/svg/rightArrow.svg" alt /></span></a>
                                     </div>
 
                                     <div class="news_hidden_details">
@@ -139,11 +139,11 @@
                                 </div>
                             </li>
                             <li>
-                                <img class="popup_image" src="img/news/4.jpg" alt />
+                                <img class="popup_image" src="elisc/img/news/4.jpg" alt />
                                 <div class="list_inner">
                                     <div class="info">
                                         <div class="meta">
-                                            <img class="svg" src="img/svg/calendar.svg" alt /> <span>March 15,
+                                            <img class="svg" src="elisc/img/svg/calendar.svg" alt /> <span>March 15,
                                                 2023</span>
                                         </div>
                                         <div class="title">
@@ -152,7 +152,7 @@
                                     </div>
                                     <div class="elisc_tm_read_more">
                                         <a class="line_effect" href="#">Learn More<span><img class="svg"
-                                                    src="img/svg/rightArrow.svg" alt /></span></a>
+                                                    src="elisc/img/svg/rightArrow.svg" alt /></span></a>
                                     </div>
 
                                     <div class="news_hidden_details">
@@ -179,11 +179,11 @@
                                 </div>
                             </li>
                             <li>
-                                <img class="popup_image" src="img/news/5.jpg" alt />
+                                <img class="popup_image" src="elisc/img/news/5.jpg" alt />
                                 <div class="list_inner">
                                     <div class="info">
                                         <div class="meta">
-                                            <img class="svg" src="img/svg/calendar.svg" alt /> <span>Feb 20,
+                                            <img class="svg" src="elisc/img/svg/calendar.svg" alt /> <span>Feb 20,
                                                 2023</span>
                                         </div>
                                         <div class="title">
@@ -192,7 +192,7 @@
                                     </div>
                                     <div class="elisc_tm_read_more">
                                         <a class="line_effect" href="#">Learn More<span><img class="svg"
-                                                    src="img/svg/rightArrow.svg" alt /></span></a>
+                                                    src="elisc/img/svg/rightArrow.svg" alt /></span></a>
                                     </div>
 
                                     <div class="news_hidden_details">
@@ -219,11 +219,11 @@
                                 </div>
                             </li>
                             <li>
-                                <img class="popup_image" src="img/news/6.jpg" alt />
+                                <img class="popup_image" src="elisc/img/news/6.jpg" alt />
                                 <div class="list_inner">
                                     <div class="info">
                                         <div class="meta">
-                                            <img class="svg" src="img/svg/calendar.svg" alt /> <span>Feb 11,
+                                            <img class="svg" src="elisc/img/svg/calendar.svg" alt /> <span>Feb 11,
                                                 2023</span>
                                         </div>
                                         <div class="title">
@@ -232,7 +232,7 @@
                                     </div>
                                     <div class="elisc_tm_read_more">
                                         <a class="line_effect" href="#">Learn More<span><img class="svg"
-                                                    src="img/svg/rightArrow.svg" alt /></span></a>
+                                                    src="elisc/img/svg/rightArrow.svg" alt /></span></a>
                                     </div>
 
                                     <div class="news_hidden_details">
@@ -259,11 +259,11 @@
                                 </div>
                             </li>
                             <li>
-                                <img class="popup_image" src="img/news/7.jpg" alt />
+                                <img class="popup_image" src="elisc/img/news/7.jpg" alt />
                                 <div class="list_inner">
                                     <div class="info">
                                         <div class="meta">
-                                            <img class="svg" src="img/svg/calendar.svg" alt /> <span>Jan 31,
+                                            <img class="svg" src="elisc/img/svg/calendar.svg" alt /> <span>Jan 31,
                                                 2023</span>
                                         </div>
                                         <div class="title">
@@ -272,7 +272,7 @@
                                     </div>
                                     <div class="elisc_tm_read_more">
                                         <a class="line_effect" href="#">Learn More<span><img class="svg"
-                                                    src="img/svg/rightArrow.svg" alt /></span></a>
+                                                    src="elisc/img/svg/rightArrow.svg" alt /></span></a>
                                     </div>
 
                                     <div class="news_hidden_details">

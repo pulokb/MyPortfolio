@@ -84,7 +84,7 @@
             <div class="list">
                 <ul>
                     <li>
-                        <img class="popup_image" src="img/experience/1.jpg" alt />
+                        <img class="popup_image" src="elisc/img/experience/1.jpg" alt />
                         <div class="list_inner">
                             <div class="short">
                                 <div class="job">
@@ -96,33 +96,21 @@
                                 </div>
                             </div>
                             <div class="text">
-                                <p>Website development is the process of building, programming, coding and maintaining
-                                    websites and web applications.</p>
+                                <p>As a Web Developer at Skoder Technologies, I am actively involved in the dynamic process of website development. My responsibilities include building, programming, coding, and maintaining websites and web applications to ensure optimal functionality and user experience.</p>
                             </div>
                             <a class="elisc_tm_full_link" href="#"></a>
 
                             <div class="hidden_details">
                                 <div class="descriptions">
-                                    <p>Pulok is a leading web design agency with an award-winning design team that
-                                        creates innovative, effective websites that capture your brand, improve your
-                                        conversion rates, and maximize your revenue to help grow your business and
-                                        achieve your goals.</p>
-                                    <p>In today’s digital world, your website is the first interaction consumers have
-                                        with your business. That's why almost 95 percent of a user’s first impression
-                                        relates to web design. It’s also why web design services can have an immense
-                                        impact on your company’s bottom line.</p>
-                                    <p>That’s why more companies are not only reevaluating their website’s design but
-                                        also partnering with Elisc, the web design agency that’s driven more than $2.4
-                                        billion in revenue for its clients. With over 20 web design awards under our
-                                        belt, we're confident we can design a custom website that drives sales for your
-                                        unique business.</p>
+                                    <p>Skoder Technologies is a forward-thinking tech company that emphasizes innovation and excellence in web design. In my role, I collaborate with an award-winning design team to create impactful websites that not only reflect the essence of our clients' brands but also enhance conversion rates and maximize revenue.</p>
+                                    <p>In today’s digital landscape, a user's first interaction with a business often happens through its website. Recognizing this, I contribute to the success of our clients by ensuring their websites are not only visually appealing but also functional and user-friendly. It's our commitment to delivering results that has set Skoder Technologies apart in the industry.</p>
+                                    <p>With a track record of over $2.4 billion in revenue generated for our clients and more than 20 web design awards, Skoder Technologies continues to be a leading force in the web development space. I take pride in being part of a team that consistently delivers custom website solutions tailored to drive sales and success for our diverse range of clients.</p>
                                 </div>
                             </div>
-
                         </div>
                     </li>
                     <li>
-                        <img class="popup_image" src="img/experience/2.jpg" alt />
+                        <img class="popup_image" src="elisc/img/experience/2.jpg" alt />
                         <div class="list_inner">
                             <div class="short">
                                 <div class="job">
@@ -134,33 +122,21 @@
                                 </div>
                             </div>
                             <div class="text">
-                                <p>Website development is the process of building, programming, coding and maintaining
-                                    websites and web applications.</p>
+                                <p>During my tenure as a Senior Designer at Skoder Technologies, I played a pivotal role in the creative process, contributing to the development of visually stunning websites and web applications.</p>
                             </div>
                             <a class="elisc_tm_full_link" href="#"></a>
 
                             <div class="hidden_details">
                                 <div class="descriptions">
-                                    <p>Elisc is a leading web design agency with an award-winning design team that
-                                        creates innovative, effective websites that capture your brand, improve your
-                                        conversion rates, and maximize your revenue to help grow your business and
-                                        achieve your goals.</p>
-                                    <p>In today’s digital world, your website is the first interaction consumers have
-                                        with your business. That's why almost 95 percent of a user’s first impression
-                                        relates to web design. It’s also why web design services can have an immense
-                                        impact on your company’s bottom line.</p>
-                                    <p>That’s why more companies are not only reevaluating their website’s design but
-                                        also partnering with Elisc, the web design agency that’s driven more than $2.4
-                                        billion in revenue for its clients. With over 50 web design awards under our
-                                        belt, we're confident we can design a custom website that drives sales for your
-                                        unique business.</p>
+                                    <p>Skoder Technologies is at the forefront of web design, and I had the privilege of working with an award-winning design team. Our collaborative efforts focused on creating innovative and effective websites that not only captured the essence of our clients' brands but also significantly improved conversion rates and maximized revenue.</p>
+                                    <p>In the fast-paced digital world, where a user's first impression is crucial, our emphasis on cutting-edge web design was paramount. Nearly 95 percent of a user’s initial perception is tied to web design, making our role instrumental in shaping the online presence of our clients' businesses and positively impacting their bottom line.</p>
+                                    <p>Being part of Skoder Technologies, a web design agency that has propelled its clients to over $2.4 billion in revenue, was both inspiring and rewarding. With a remarkable portfolio of over 50 web design awards, our team was confident in our ability to craft custom websites that not only reflected the uniqueness of each business but also drove sales and success in a highly competitive digital landscape.</p>
                                 </div>
                             </div>
-
                         </div>
                     </li>
                     <li>
-                        <img class="popup_image" src="img/experience/3.jpg" alt />
+                        <img class="popup_image" src="elisc/img/experience/3.jpg" alt />
                         <div class="list_inner">
                             <div class="short">
                                 <div class="job">
@@ -172,67 +148,43 @@
                                 </div>
                             </div>
                             <div class="text">
-                                <p>Website development is the process of building, programming, coding and maintaining
-                                    websites and web applications.</p>
+                                <p>During my time as a UX Designer at Skoder Technologies, I played a key role in shaping user experiences through thoughtful design and innovation in website development.</p>
                             </div>
                             <a class="elisc_tm_full_link" href="#"></a>
 
                             <div class="hidden_details">
                                 <div class="descriptions">
-                                    <p>Elisc is a leading web design agency with an award-winning design team that
-                                        creates innovative, effective websites that capture your brand, improve your
-                                        conversion rates, and maximize your revenue to help grow your business and
-                                        achieve your goals.</p>
-                                    <p>In today’s digital world, your website is the first interaction consumers have
-                                        with your business. That's why almost 95 percent of a user’s first impression
-                                        relates to web design. It’s also why web design services can have an immense
-                                        impact on your company’s bottom line.</p>
-                                    <p>That’s why more companies are not only reevaluating their website’s design but
-                                        also partnering with Elisc, the web design agency that’s driven more than $2.4
-                                        billion in revenue for its clients. With over 50 web design awards under our
-                                        belt, we're confident we can design a custom website that drives sales for your
-                                        unique business.</p>
+                                    <p>Skoder Technologies, a renowned web design agency, provided an exciting platform for me to work with an award-winning design team. Our focus was on creating websites that not only reflected innovation but also effectively captured the essence of our clients' brands. My role specifically revolved around optimizing user experiences through meticulous attention to UX design principles.</p>
+                                    <p>In today’s digital landscape, the significance of a user-friendly website cannot be overstated. Understanding that nearly 95 percent of a user’s first impression is tied to web design, our team at Skoder Technologies aimed to redefine the online presence of businesses. Web design services were not just about aesthetics but also about making a substantial impact on the bottom line of our clients.</p>
+                                    <p>Skoder Technologies, with its impressive track record of driving over $2.4 billion in revenue for clients and boasting more than 50 web design awards, instilled confidence in our ability to deliver exceptional results. As a UX Designer, I contributed to this success by creating custom website experiences that not only met industry standards but also exceeded user expectations, ultimately driving sales and success for our diverse clientele.</p>
                                 </div>
                             </div>
-
                         </div>
                     </li>
                     <li>
-                        <img class="popup_image" src="img/experience/4.jpg" alt />
+                        <img class="popup_image" src="elisc/img/experience/4.jpg" alt />
                         <div class="list_inner">
                             <div class="short">
                                 <div class="job">
                                     <span class="yellowColor">-2018 - 2020</span>
-                                    <h3>-Graphic Designer</h3>
+                                    <h3>Graphic Designer</h3>
                                 </div>
                                 <div class="place">
                                     <span>-Skoder Technologies</span>
                                 </div>
                             </div>
                             <div class="text">
-                                <p>Website development is the process of building, programming, coding and maintaining
-                                    websites and web applications.</p>
+                                <p>During my tenure as a Graphic Designer at Skoder Technologies, I played a key role in shaping the visual identity of websites and web applications through creative and impactful design solutions.</p>
                             </div>
                             <a class="elisc_tm_full_link" href="#"></a>
 
                             <div class="hidden_details">
                                 <div class="descriptions">
-                                    <p>Elisc is a leading web design agency with an award-winning design team that
-                                        creates innovative, effective websites that capture your brand, improve your
-                                        conversion rates, and maximize your revenue to help grow your business and
-                                        achieve your goals.</p>
-                                    <p>In today’s digital world, your website is the first interaction consumers have
-                                        with your business. That's why almost 95 percent of a user’s first impression
-                                        relates to web design. It’s also why web design services can have an immense
-                                        impact on your company’s bottom line.</p>
-                                    <p>That’s why more companies are not only reevaluating their website’s design but
-                                        also partnering with Elisc, the web design agency that’s driven more than $2.4
-                                        billion in revenue for its clients. With over 50 web design awards under our
-                                        belt, we're confident we can design a custom website that drives sales for your
-                                        unique business.</p>
+                                    <p>Skoder Technologies, a leading web design agency, provided a dynamic environment for creative expression. Working with an award-winning design team, my responsibilities as a Graphic Designer involved creating visually innovative and effective designs that not only captured the essence of our clients' brands but also contributed to improved conversion rates and revenue growth.</p>
+                                    <p>In the digital age, where a user's first interaction with a business often occurs through its website, the importance of impactful graphic design cannot be overstated. Recognizing that nearly 95 percent of a user’s first impression relates to web design, our team at Skoder Technologies aimed to set new standards in visual communication, making a significant impact on our clients’ bottom line.</p>
+                                    <p>Skoder Technologies, with its impressive track record of driving over $2.4 billion in revenue for clients and earning more than 50 web design awards, symbolized excellence in the industry. As a Graphic Designer, I contributed to this success by creating custom designs that not only met the unique requirements of each business but also played a vital role in driving sales and achieving their business goals.</p>
                                 </div>
                             </div>
-
                         </div>
                     </li>
                 </ul>

@@ -19,6 +19,9 @@ use Illuminate\Support\Facades\Route;
 
     Route::get('about', [PortfolioController::class, 'about'])->name('about');
     Route::get('blog', [PortfolioController::class, 'blog'])->name('blog');
+    Route::post('blog', [PortfolioController::class, 'blog'])->name('blog');
+    Route::get('blog', [PortfolioController::class, 'blog'])->name('blog');
+    Route::get('blog', [PortfolioController::class, 'blog'])->name('blog');
     Route::get('contact', [PortfolioController::class, 'contact'])->name('contact');
     Route::get('protfolio', [PortfolioController::class, 'protfolio'])->name('protfolio');
     Route::get('service', [PortfolioController::class, 'service'])->name('service');
