@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\PortfolioController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +14,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+    Route::get('/', [PortfolioController::class, 'index'])->name('index');
+
+
+    Route::get('about', [PortfolioController::class, 'about'])->name('about');
+    Route::get('blog', [PortfolioController::class, 'blog'])->name('blog');
+    Route::get('contact', [PortfolioController::class, 'contact'])->name('contact');
+    Route::get('protfolio', [PortfolioController::class, 'protfolio'])->name('protfolio');
+    Route::get('service', [PortfolioController::class, 'service'])->name('service');
+
+
+
+
