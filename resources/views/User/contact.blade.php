@@ -1,5 +1,5 @@
 @include('include.sidebar')
-    <div class="elisc_tm_section" id="contact">
+    {{-- <div class="elisc_tm_section" id="contact"> --}}
     <div class="elisc_tm_contact">
     <div class="tm_content">
     <div class="wrapper">
@@ -14,20 +14,20 @@
     <div class="info">
     <ul>
     <li>
-    <a href="tel:+77 022 444 05 05">+77 022 444 05 05</a>
+    <a href="tel:+8801793651750">+8801793651750</a>
     </li>
     <li>
-    <a href="https://marketifythemes.net/cdn-cgi/l/email-protection#186b6d6868776a6c587d74716b7b367b7775"><span class="__cf_email__" data-cfemail="c9babcb9b9a6bbbd89aca5a0baaae7aaa6a4">[email&#160;protected]</span></a>
+    <a href="mailto:pulok.skoder@gmail.com"><span>pulok.skoder@gmail.com</span></a>
     </li>
     <li>
-    <a class="href_location" href="#">Ave Street Avenue, New York</a>
+    <a class="href_location" href="mailto:pulok.skoder@gmail.com">Katasur, Mohammadpur, 1207 Dhaka, Bangladesh</a>
     </li>
     </ul>
     </div>
     </div>
     <div class="right">
     <div class="fields">
-    <form action="https://marketifythemes.net/" method="post" class="contact_form" id="contact_form">
+    <form action="#" method="post" class="contact_form" id="contact_form">
     <div class="returnmessage" data-success="Your message has been received, We will contact you soon."></div>
     <div class="empty_notice"><span>Please Fill Required Fields</span></div>
     <div class="first">
@@ -52,8 +52,16 @@
     </div>
     </div>
     <div class="elisc_tm_map">
-    <div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="375" id="gmap_canvas" src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.embedgooglemap.net/blog/divi-discount-code-elegant-themes-coupon"></a><br><style>.mapouter{position:relative;text-align:right;height:375px;width:100%;}</style><a href="https://www.embedgooglemap.net/">how to add google map</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:375px;width:100%;}</style></div></div>
-
+        <div class="mapouter">
+            <div class="gmap_canvas">
+                <iframe width="100%" height="375" id="gmap_canvas" src="https://maps.google.com/maps?q=Katasur,%20Mohammadpur,%201207%20Dhaka,%20Bangladesh&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                <a href="https://www.embedgooglemap.net/blog/divi-discount-code-elegant-themes-coupon"></a>
+                <br>
+                <style>.mapouter{position:relative;text-align:right;height:375px;width:100%;}</style>
+                <a href="https://www.embedgooglemap.net/">how to add google map</a>
+                <style>.gmap_canvas {overflow:hidden;background:none!important;height:375px;width:100%;}</style>
+            </div>
+        </div>
     </div>
     </div>
     </div>

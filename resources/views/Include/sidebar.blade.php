@@ -48,19 +48,20 @@
 <div class="inner">
 <div class="wrapper">
 <div class="avatar">
-<div class="image" data-img-url="elisc/img/about/1.jpg"></div>
+<div class="image" data-img-url="elisc/img/about/pulok.png"></div>
 </div>
 <div class="menu_list">
 <ul class="transition_link">
-<li class="active"><a href="#home">Home</a></li>
-<li><a href="#about">About</a></li>
-<li><a href="#service">Services</a></li>
-<li><a href="#portfolio">Portfolio</a></li>
-<li><a href="#news">Blog</a></li>
-<li><a href="#contact">Contact</a></li>
+    <li ><a href="{{ route('index') }}">Home</a></li>
+    <li><a href="{{ route('about') }}">About</a></li>
+    <li><a href="{{ route('service') }}">Services</a></li>
+    <li><a href="{{ route('protfolio') }}">Portfolio</a></li>
+    <li><a href="{{ route('blog') }}">Blog</a></li>
+    <li><a href="{{ route('contact') }}">Contact</a></li>
+
 </ul>
 </div>
-<div class="social">
+{{-- <div class="social">
 <ul>
 <li><a href="#"><img class="svg" src="elisc/img/svg/social/facebook.svg" alt /></a></li>
 <li><a href="#"><img class="svg" src="elisc/img/svg/social/twitter.svg" alt /></a></li>
@@ -68,7 +69,7 @@
 <li><a href="#"><img class="svg" src="elisc/img/svg/social/dribbble.svg" alt /></a></li>
 <li><a href="#"><img class="svg" src="elisc/html/img/svg/social/tik-tok.svg" alt /></a></li>
 </ul>
-</div>
+</div> --}}
 <div class="copyright">
 <p>Copyright &copy; 2024</p>
 </div>
@@ -90,20 +91,21 @@
 </div>
 <div class="menu scrollable">
 <ul class="transition_link">
-<li class="active"><a href="#home">Home</a></li>
-<li><a href="#about">About</a></li>
-<li><a href="#service">Services</a></li>
-<li><a href="#portfolio">Portfolio</a></li>
-<li><a href="#news">Blog</a></li>
-<li><a href="#contact">Contact</a></li>
+    <li ><a href="{{ route('index') }}">Home</a></li>
+    <li><a href="{{ route('about') }}">About</a></li>
+    <li><a href="{{ route('service') }}">Services</a></li>
+    <li><a href="{{ route('protfolio') }}">Portfolio</a></li>
+    <li><a href="{{ route('blog') }}">Blog</a></li>
+    <li><a href="{{ route('contact') }}">Contact</a></li>
+
 </ul>
 </div>
 <div class="copyright">
 <div class="social">
 <ul>
-<li><a href="#"><i class="icon-facebook-1"></i></a></li>
-<li><a href="#"><i class="icon-twitter-1"></i></a></li>
-<li><a href="#"><i class="icon-linkedin-1"></i></a></li>
+<li><a href="https://www.facebook.com/pulokbiswas24Dec"><i class="icon-facebook-1"></i></a></li>
+<li><a href="https://twitter.com/pulok_b"><i class="icon-twitter-1"></i></a></li>
+<li><a href="https://www.linkedin.com/in/pulokbiswas/"><i class="icon-linkedin-1"></i></a></li>
 </ul>
 </div>
 <div class="text">
