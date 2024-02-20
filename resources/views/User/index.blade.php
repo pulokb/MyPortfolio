@@ -45,7 +45,7 @@
                                 </div>
                             </div>
                             <div class="right">
-                                <img src="elisc/img/about/2.png" alt="Pulok" style="width: 500px; height: auto;">
+                                <img src="elisc/img/about/pulok.png" alt="Pulok" style="width: 500px; height: auto;">
                             </div>
                         </div>
                     </div>
