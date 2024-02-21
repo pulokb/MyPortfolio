@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-  
-<!-- Mirrored from admin.pixelstrap.net/dunzo/template/error-400.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 18 Feb 2024 16:05:59 GMT -->
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,7 +9,7 @@
     <meta name="author" content="pixelstrap">
     <link rel="icon" href="../assets/images/favicon.png" type="image/x-icon">
     <link rel="shortcut icon" href="../assets/images/favicon.png" type="image/x-icon">
-    <title>Dunzo - Premium Admin Template</title>
+    <title>Admin</title>
     <!-- Google font-->
     <link href="https://fonts.googleapis.com/css?family=Outfit:400,400i,500,500i,700,700i&amp;display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900&amp;display=swap" rel="stylesheet">
@@ -339,6 +337,4 @@
     <script src="../assets/js/script.js"></script>
     <!-- Plugin used-->
   </body>
-
-<!-- Mirrored from admin.pixelstrap.net/dunzo/template/error-400.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 18 Feb 2024 16:06:00 GMT -->
 </html>

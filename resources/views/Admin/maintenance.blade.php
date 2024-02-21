@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-  
-<!-- Mirrored from admin.pixelstrap.net/dunzo/template/reset-password.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 18 Feb 2024 16:06:03 GMT -->
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,7 +9,7 @@
     <meta name="author" content="pixelstrap">
     <link rel="icon" href="../assets/images/favicon.png" type="image/x-icon">
     <link rel="shortcut icon" href="../assets/images/favicon.png" type="image/x-icon">
-    <title>Dunzo - Premium Admin Template</title>
+    <title>Admin</title>
     <!-- Google font-->
     <link href="https://fonts.googleapis.com/css?family=Outfit:400,400i,500,500i,700,700i&amp;display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900&amp;display=swap" rel="stylesheet">
@@ -34,56 +32,29 @@
     <!-- Responsive css-->
     <link rel="stylesheet" type="text/css" href="../assets/css/responsive.css">
   </head>
-  <body> 
-    <!-- loader starts-->
-    <div class="loader-wrapper">
-      <div class="theme-loader">    
-        <div class="loader-p"></div>
-      </div>
-    </div>
-    <!-- loader ends-->
+  <body>
     <!-- tap on top starts-->
     <div class="tap-top"><i data-feather="chevrons-up"></i></div>
     <!-- tap on tap ends-->
     <!-- page-wrapper Start-->
     <div class="page-wrapper">
-      <div class="container-fluid p-0">
-        <div class="row">
-          <div class="col-12">     
-            <div class="login-card login-dark">
-              <div>
-                <div><a class="logo" href="index-2.html"><img class="img-fluid for-light" src="../assets/images/logo/logo-1.png" alt="looginpage"><img class="img-fluid for-dark" src="../assets/images/logo/logo.png" alt="looginpage"></a></div>
-                <div class="login-main"> 
-                  <form class="theme-form">
-                    <h4>Create Your Password</h4>
-                    <div class="form-group">
-                      <label class="col-form-label">New Password</label>
-                      <div class="form-input position-relative">
-                        <input class="form-control" type="password" name="login[password]" required="" placeholder="*********">
-                        <div class="show-hide"><span class="show"></span></div>
-                      </div>
-                    </div>
-                    <div class="form-group">
-                      <label class="col-form-label">Retype Password</label>
-                      <input class="form-control" type="password" name="login[password]" required="" placeholder="*********">
-                    </div>
-                    <div class="form-group mb-0">
-                      <div class="checkbox p-0">
-                        <input id="checkbox1" type="checkbox">
-                        <label class="text-muted" for="checkbox1">Remember password</label>
-                      </div>
-                      <button class="btn btn-primary btn-block w-100" type="submit">Done                          </button>
-                    </div>
-                    <p class="mt-4 mb-0">Don't have account?<a class="ms-2" href="sign-up.html">Create Account</a></p>
-                  </form>
-                </div>
-              </div>
-            </div>
+      <!-- Maintenance start-->
+      <div class="error-wrapper maintenance-bg">
+        <div class="container">
+          <ul class="maintenance-icons">
+            <li><i class="fa fa-cog"></i></li>
+            <li><i class="fa fa-cog"></i></li>
+            <li><i class="fa fa-cog"></i></li>
+          </ul>
+          <div class="maintenance-heading">
+            <h2 class="headline">MAINTENANCE</h2>
           </div>
+          <h4 class="sub-content">Our Site is Currently under maintenance We will be back Shortly<br>                Thank You For Patience</h4>
+          <div><a class="btn btn-primary-gradien btn-lg text-light" href="index-2.html">BACK TO HOME PAGE</a></div>
         </div>
       </div>
+      <!-- Maintenance end-->
     </div>
-    <!-- page-wrapper Ends-->
     <!-- latest jquery-->
     <script src="../assets/js/jquery.min.js"></script>
     <!-- Bootstrap js-->
@@ -100,6 +71,4 @@
     <script src="../assets/js/script.js"></script>
     <!-- Plugin used-->
   </body>
-
-<!-- Mirrored from admin.pixelstrap.net/dunzo/template/reset-password.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 18 Feb 2024 16:06:03 GMT -->
 </html>

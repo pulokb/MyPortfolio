@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-  
-<!-- Mirrored from admin.pixelstrap.net/dunzo/template/forget-password.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 18 Feb 2024 16:06:03 GMT -->
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,7 +9,7 @@
     <meta name="author" content="pixelstrap">
     <link rel="icon" href="../assets/images/favicon.png" type="image/x-icon">
     <link rel="shortcut icon" href="../assets/images/favicon.png" type="image/x-icon">
-    <title>Dunzo - Premium Admin Template</title>
+    <title>Admin</title>
     <!-- Google font-->
     <link href="https://fonts.googleapis.com/css?family=Outfit:400,400i,500,500i,700,700i&amp;display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900&amp;display=swap" rel="stylesheet">
@@ -34,10 +32,10 @@
     <!-- Responsive css-->
     <link rel="stylesheet" type="text/css" href="../assets/css/responsive.css">
   </head>
-  <body> 
+  <body>
     <!-- loader starts-->
     <div class="loader-wrapper">
-      <div class="theme-loader">    
+      <div class="theme-loader">
         <div class="loader-p"></div>
       </div>
     </div>
@@ -49,45 +47,13 @@
     <div class="page-wrapper">
       <div class="container-fluid p-0">
         <div class="row">
-          <div class="col-12">     
+          <div class="col-12">
             <div class="login-card login-dark">
               <div>
                 <div><a class="logo" href="index-2.html"><img class="img-fluid for-light" src="../assets/images/logo/logo-1.png" alt="looginpage"><img class="img-fluid for-dark" src="../assets/images/logo/logo.png" alt="looginpage"></a></div>
-                <div class="login-main"> 
+                <div class="login-main">
                   <form class="theme-form">
-                    <h4>Reset Your Password</h4>
-                    <div class="form-group">
-                      <label class="col-form-label">Enter Your Mobile Number</label>
-                      <div class="row">
-                        <div class="col-4 col-sm-3">
-                          <input class="form-control mb-1" type="text" value="+ 91">
-                        </div>
-                        <div class="col-8 col-sm-9">
-                          <input class="form-control mb-1" type="tel" value="000-000-0000">
-                        </div>
-                        <div class="col-12">
-                          <div class="text-end">
-                            <button class="btn btn-primary btn-block m-t-10" type="submit">Send</button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="mt-4 mb-4"><span class="reset-password-link">If don't receive OTP?  <a class="btn-link text-danger" href="#">Resend</a></span></div>
-                    <div class="form-group">
-                      <label class="col-form-label pt-0">Enter OTP</label>
-                      <div class="row">
-                        <div class="col">
-                          <input class="form-control text-center opt-text" type="text" value="00" maxlength="2">
-                        </div>
-                        <div class="col">
-                          <input class="form-control text-center opt-text" type="text" value="00" maxlength="2">
-                        </div>
-                        <div class="col">
-                          <input class="form-control text-center opt-text" type="text" value="00" maxlength="2">
-                        </div>
-                      </div>
-                    </div>
-                    <h6 class="mt-4">Create Your Password</h6>
+                    <h4>Create Your Password</h4>
                     <div class="form-group">
                       <label class="col-form-label">New Password</label>
                       <div class="form-input position-relative">
@@ -106,7 +72,7 @@
                       </div>
                       <button class="btn btn-primary btn-block w-100" type="submit">Done                          </button>
                     </div>
-                    <p class="mt-4 mb-0 text-center">Already have an password?<a class="ms-2" href="login.html">Sign in</a></p>
+                    <p class="mt-4 mb-0">Don't have account?<a class="ms-2" href="sign-up.html">Create Account</a></p>
                   </form>
                 </div>
               </div>
@@ -115,6 +81,7 @@
         </div>
       </div>
     </div>
+    <!-- page-wrapper Ends-->
     <!-- latest jquery-->
     <script src="../assets/js/jquery.min.js"></script>
     <!-- Bootstrap js-->
@@ -131,6 +98,4 @@
     <script src="../assets/js/script.js"></script>
     <!-- Plugin used-->
   </body>
-
-<!-- Mirrored from admin.pixelstrap.net/dunzo/template/forget-password.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 18 Feb 2024 16:06:03 GMT -->
 </html>

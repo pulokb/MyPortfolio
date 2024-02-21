@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-  
-<!-- Mirrored from admin.pixelstrap.net/dunzo/template/sign-up.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 18 Feb 2024 16:06:02 GMT -->
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,7 +9,7 @@
     <meta name="author" content="pixelstrap">
     <link rel="icon" href="../assets/images/favicon.png" type="image/x-icon">
     <link rel="shortcut icon" href="../assets/images/favicon.png" type="image/x-icon">
-    <title>Dunzo - Premium Admin Template</title>
+    <title>Admin</title>
     <!-- Google font-->
     <link href="https://fonts.googleapis.com/css?family=Outfit:400,400i,500,500i,700,700i&amp;display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900&amp;display=swap" rel="stylesheet">
@@ -36,13 +34,13 @@
   </head>
   <body>
     <!-- login page start-->
-    <div class="container-fluid p-0"> 
+    <div class="container-fluid p-0">
       <div class="row m-0">
-        <div class="col-12 p-0">    
+        <div class="col-12 p-0">
           <div class="login-card login-dark">
             <div>
               <div><a class="logo" href="index-2.html"><img class="img-fluid for-light" src="../assets/images/logo/logo-1.png" alt="looginpage"><img class="img-fluid for-dark" src="../assets/images/logo/logo.png" alt="looginpage"></a></div>
-              <div class="login-main"> 
+              <div class="login-main">
                 <form class="theme-form">
                   <h4>Create your account</h4>
                   <p>Enter your personal details to create account</p>
@@ -103,6 +101,4 @@
       <!-- Plugin used-->
     </div>
   </body>
-
-<!-- Mirrored from admin.pixelstrap.net/dunzo/template/sign-up.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 18 Feb 2024 16:06:02 GMT -->
 </html>
