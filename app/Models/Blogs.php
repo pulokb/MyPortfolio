@@ -8,38 +8,10 @@ use Illuminate\Database\Eloquent\Model;
 class Blogs extends Model
 {
     use HasFactory;
-
-    public $table = 'symptoms';
-    
-
-
-
-    public $fillable = [
-        'title',
-        'details',
+    protected $fillable = [
         'date',
-    ];
-
-    /**
-     * The attributes that should be casted to native types.
-     *
-     * @var array
-     */
-    protected $casts = [
-        'title' => 'string',
-        'details' => 'string',
-        'date' => 'string',
-
-    ];
-
-    /**
-     * Validation rules
-     *
-     * @var array
-     */
-    public static $rules = [
-        'title' => 'nullable',
-        'details' => 'nullable',
-        'date' => 'nullable',
+        'title',
+        'image',
+        'details'
     ];
 }
