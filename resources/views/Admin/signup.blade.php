@@ -7,30 +7,30 @@
     <meta name="description" content="Dunzo admin is super flexible, powerful, clean &amp; modern responsive bootstrap 5 admin template with unlimited possibilities.">
     <meta name="keywords" content="admin template, Dunzo admin template, dashboard template, flat admin template, responsive admin template, web app">
     <meta name="author" content="pixelstrap">
-    <link rel="icon" href="../assets/images/favicon.png" type="image/x-icon">
-    <link rel="shortcut icon" href="../assets/images/favicon.png" type="image/x-icon">
+    <link rel="icon" href="dunzo/images/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="dunzo/images/favicon.png" type="image/x-icon">
     <title>Admin</title>
     <!-- Google font-->
     <link href="https://fonts.googleapis.com/css?family=Outfit:400,400i,500,500i,700,700i&amp;display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900&amp;display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="../assets/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="dunzo/css/font-awesome.css">
     <!-- ico-font-->
-    <link rel="stylesheet" type="text/css" href="../assets/css/vendors/icofont.css">
+    <link rel="stylesheet" type="text/css" href="dunzo/css/vendors/icofont.css">
     <!-- Themify icon-->
-    <link rel="stylesheet" type="text/css" href="../assets/css/vendors/themify.css">
+    <link rel="stylesheet" type="text/css" href="dunzo/css/vendors/themify.css">
     <!-- Flag icon-->
-    <link rel="stylesheet" type="text/css" href="../assets/css/vendors/flag-icon.css">
+    <link rel="stylesheet" type="text/css" href="dunzo/css/vendors/flag-icon.css">
     <!-- Feather icon-->
-    <link rel="stylesheet" type="text/css" href="../assets/css/vendors/feather-icon.css">
+    <link rel="stylesheet" type="text/css" href="dunzo/css/vendors/feather-icon.css">
     <!-- Plugins css start-->
     <!-- Plugins css Ends-->
     <!-- Bootstrap css-->
-    <link rel="stylesheet" type="text/css" href="../assets/css/vendors/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="dunzo/css/vendors/bootstrap.css">
     <!-- App css-->
-    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
-    <link id="color" rel="stylesheet" href="../assets/css/color-1.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="dunzo/css/style.css">
+    <link id="color" rel="stylesheet" href="dunzo/css/color-1.css" media="screen">
     <!-- Responsive css-->
-    <link rel="stylesheet" type="text/css" href="../assets/css/responsive.css">
+    <link rel="stylesheet" type="text/css" href="dunzo/css/responsive.css">
   </head>
   <body>
     <!-- login page start-->
@@ -39,7 +39,7 @@
         <div class="col-12 p-0">
           <div class="login-card login-dark">
             <div>
-              <div><a class="logo" href="index-2.html"><img class="img-fluid for-light" src="../assets/images/logo/logo-1.png" alt="looginpage"><img class="img-fluid for-dark" src="../assets/images/logo/logo.png" alt="looginpage"></a></div>
+              <div><a class="logo" href="index-2.html"><img class="img-fluid for-light" src="dunzo/images/logo/logo-1.png" alt="looginpage"><img class="img-fluid for-dark" src="dunzo/images/logo/logo.png" alt="looginpage"></a></div>
               <div class="login-main">
                 <form class="theme-form">
                   <h4>Create your account</h4>
@@ -74,10 +74,10 @@
                     <button class="btn btn-primary btn-block w-100" type="submit">Create Account</button>
                   </div>
                   <h6 class="text-muted mt-4 or">Or signup with</h6>
-                  <div class="social mt-4">
+                  {{-- <div class="social mt-4">
                     <div class="btn-showcase"><a class="btn btn-light" href="https://www.linkedin.com/login" target="_blank"><i class="txt-linkedin" data-feather="linkedin"></i> LinkedIn </a><a class="btn btn-light" href="https://twitter.com/login?lang=en" target="_blank"><i class="txt-twitter" data-feather="twitter"></i>twitter</a><a class="btn btn-light" href="https://www.facebook.com/" target="_blank"><i class="txt-fb" data-feather="facebook"></i>facebook</a></div>
-                  </div>
-                  <p class="mt-4 mb-0">Already have an account?<a class="ms-2" href="login.html">Sign in</a></p>
+                  </div> --}}
+                  <p class="mt-4 mb-0">Already have an account?<a class="ms-2" href="{{ route('login') }}">Sign in</a></p>
                 </form>
               </div>
             </div>
@@ -85,19 +85,19 @@
         </div>
       </div>
       <!-- latest jquery-->
-      <script src="../assets/js/jquery.min.js"></script>
+      <script src="dunzo/js/jquery.min.js"></script>
       <!-- Bootstrap js-->
-      <script src="../assets/js/bootstrap/bootstrap.bundle.min.js"></script>
+      <script src="dunzo/js/bootstrap/bootstrap.bundle.min.js"></script>
       <!-- feather icon js-->
-      <script src="../assets/js/icons/feather-icon/feather.min.js"></script>
-      <script src="../assets/js/icons/feather-icon/feather-icon.js"></script>
+      <script src="dunzo/js/icons/feather-icon/feather.min.js"></script>
+      <script src="dunzo/js/icons/feather-icon/feather-icon.js"></script>
       <!-- scrollbar js-->
       <!-- Sidebar jquery-->
-      <script src="../assets/js/config.js"></script>
+      <script src="dunzo/js/config.js"></script>
       <!-- Plugins JS start-->
       <!-- Plugins JS Ends-->
       <!-- Theme js-->
-      <script src="../assets/js/script.js"></script>
+      <script src="dunzo/js/script.js"></script>
       <!-- Plugin used-->
     </div>
   </body>

@@ -1,3 +1,5 @@
+@include('layout.adminsidebar')
+
 <div class="page-body">
     <div class="container-fluid">
       <div class="page-title">
@@ -9,7 +11,7 @@
             <ol class="breadcrumb">
               <li class="breadcrumb-item"><a href="#">
                   <svg class="stroke-icon">
-                    <use href="../assets/svg/icon-sprite.svg#stroke-home"></use>
+                    <use href="dunzo/svg/icon-sprite.svg#stroke-home"></use>
                   </svg></a></li>
               <li class="breadcrumb-item">Dashboard</li>
             </ol>
@@ -29,9 +31,9 @@
                     <div class="flex-grow-1">
                       <h1>Hello, Pulok</h1>
                       <p>Welcome back! Let's start from where you left.</p><a class="btn"
-                        href="user-profile.html">View Profile</a>
+                        href="{{ route('profile') }}">View Profile</a>
                     </div>
-                    <div class="flex-shrink-0"> <img src="../assets/images/dashboard/welcome.png" alt=""></div>
+                    <div class="flex-shrink-0"> <img src="dunzo/images/dashboard/welcome.png" alt=""></div>
                   </div>
                 </div>
               </div>
@@ -42,3 +44,5 @@
     </div>
     <!-- Container-fluid Ends-->
   </div>
+
+  @include('layout.adminfooter')

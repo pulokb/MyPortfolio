@@ -1,4 +1,6 @@
-        <div class="page-body">
+@include('layout.adminsidebar')
+
+<div class="page-body">
           <div class="container-fluid">
             <div class="page-title">
               <div class="row">
@@ -7,9 +9,9 @@
                 </div>
                 <div class="col-sm-6 pe-0">
                   <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="index-2.html">
+                    <li class="breadcrumb-item"><a href="{{ route('adminindex') }}">
                         <svg class="stroke-icon">
-                          <use href="../assets/svg/icon-sprite.svg#stroke-home"></use>
+                          <use href="dunzo/svg/icon-sprite.svg#stroke-home"></use>
                         </svg></a></li>
                     <li class="breadcrumb-item">Apps</li>
                     <li class="breadcrumb-item active">Support Ticket</li>
@@ -193,7 +195,7 @@
                         <tbody>
                           <tr>
                             <td>
-                              <div class="d-flex"><img class="rounded-circle img-30 me-3" src="../assets/images/user/1.jpg" alt="Generic placeholder image">
+                              <div class="d-flex"><img class="rounded-circle img-30 me-3" src="dunzo/images/user/1.jpg" alt="Generic placeholder image">
                                 <div class="flex-grow-1 align-self-center">
                                   <div>Tiger Nixon</div>
                                 </div>
@@ -214,7 +216,7 @@
                           </tr>
                           <tr>
                             <td>
-                              <div class="d-flex"><img class="rounded-circle img-30 me-3" src="../assets/images/user/2.png" alt="Generic placeholder image">
+                              <div class="d-flex"><img class="rounded-circle img-30 me-3" src="dunzo/images/user/2.png" alt="Generic placeholder image">
                                 <div class="flex-grow-1 align-self-center">
                                   <div>Garrett Winters</div>
                                 </div>
@@ -235,7 +237,7 @@
                           </tr>
                           <tr>
                             <td>
-                              <div class="d-flex"><img class="rounded-circle img-30 me-3" src="../assets/images/user/3.png" alt="Generic placeholder image">
+                              <div class="d-flex"><img class="rounded-circle img-30 me-3" src="dunzo/images/user/3.png" alt="Generic placeholder image">
                                 <div class="flex-grow-1 align-self-center">
                                   <div>Ashton Cox</div>
                                 </div>
@@ -256,7 +258,7 @@
                           </tr>
                           <tr>
                             <td>
-                              <div class="d-flex"><img class="rounded-circle img-30 me-3" src="../assets/images/user/4.jpg" alt="Generic placeholder image">
+                              <div class="d-flex"><img class="rounded-circle img-30 me-3" src="dunzo/images/user/4.jpg" alt="Generic placeholder image">
                                 <div class="flex-grow-1 align-self-center">
                                   <div>Cedric Kelly</div>
                                 </div>
@@ -277,7 +279,7 @@
                           </tr>
                           <tr>
                             <td>
-                              <div class="d-flex"><img class="rounded-circle img-30 me-3" src="../assets/images/user/5.jpg" alt="Generic placeholder image">
+                              <div class="d-flex"><img class="rounded-circle img-30 me-3" src="dunzo/images/user/5.jpg" alt="Generic placeholder image">
                                 <div class="flex-grow-1 align-self-center">
                                   <div>Airi Satou</div>
                                 </div>
@@ -298,7 +300,7 @@
                           </tr>
                           <tr>
                             <td>
-                              <div class="d-flex"><img class="rounded-circle img-30 me-3" src="../assets/images/user/6.jpg" alt="Generic placeholder image">
+                              <div class="d-flex"><img class="rounded-circle img-30 me-3" src="dunzo/images/user/6.jpg" alt="Generic placeholder image">
                                 <div class="flex-grow-1 align-self-center">
                                   <div>Brielle Williamson</div>
                                 </div>
@@ -319,7 +321,7 @@
                           </tr>
                           <tr>
                             <td>
-                              <div class="d-flex"><img class="rounded-circle img-30 me-3" src="../assets/images/user/7.jpg" alt="Generic placeholder image">
+                              <div class="d-flex"><img class="rounded-circle img-30 me-3" src="dunzo/images/user/7.jpg" alt="Generic placeholder image">
                                 <div class="flex-grow-1 align-self-center">
                                   <div>Herrod Chandler</div>
                                 </div>
@@ -340,7 +342,7 @@
                           </tr>
                           <tr>
                             <td>
-                              <div class="d-flex"><img class="rounded-circle img-30 me-3" src="../assets/images/user/8.jpg" alt="Generic placeholder image">
+                              <div class="d-flex"><img class="rounded-circle img-30 me-3" src="dunzo/images/user/8.jpg" alt="Generic placeholder image">
                                 <div class="flex-grow-1 align-self-center">
                                   <div>Rhona Davidson</div>
                                 </div>
@@ -361,7 +363,7 @@
                           </tr>
                           <tr>
                             <td>
-                              <div class="d-flex"><img class="rounded-circle img-30 me-3" src="../assets/images/user/9.jpg" alt="Generic placeholder image">
+                              <div class="d-flex"><img class="rounded-circle img-30 me-3" src="dunzo/images/user/9.jpg" alt="Generic placeholder image">
                                 <div class="flex-grow-1 align-self-center">
                                   <div>Colleen Hurst</div>
                                 </div>
@@ -382,7 +384,7 @@
                           </tr>
                           <tr>
                             <td>
-                              <div class="d-flex"><img class="rounded-circle img-30 me-3" src="../assets/images/user/10.jpg" alt="Generic placeholder image">
+                              <div class="d-flex"><img class="rounded-circle img-30 me-3" src="dunzo/images/user/10.jpg" alt="Generic placeholder image">
                                 <div class="flex-grow-1 align-self-center">
                                   <div>Sonya Frost</div>
                                 </div>
@@ -403,7 +405,7 @@
                           </tr>
                           <tr>
                             <td>
-                              <div class="d-flex"><img class="rounded-circle img-30 me-3" src="../assets/images/user/11.png" alt="Generic placeholder image">
+                              <div class="d-flex"><img class="rounded-circle img-30 me-3" src="dunzo/images/user/11.png" alt="Generic placeholder image">
                                 <div class="flex-grow-1 align-self-center">
                                   <div>Jena Gaines</div>
                                 </div>
@@ -424,7 +426,7 @@
                           </tr>
                           <tr>
                             <td>
-                              <div class="d-flex"><img class="rounded-circle img-30 me-3" src="../assets/images/user/12.png" alt="Generic placeholder image">
+                              <div class="d-flex"><img class="rounded-circle img-30 me-3" src="dunzo/images/user/12.png" alt="Generic placeholder image">
                                 <div class="flex-grow-1 align-self-center">
                                   <div>Quinn Flynn</div>
                                 </div>
@@ -445,7 +447,7 @@
                           </tr>
                           <tr>
                             <td>
-                              <div class="d-flex"><img class="rounded-circle img-30 me-3" src="../assets/images/user/1.jpg" alt="Generic placeholder image">
+                              <div class="d-flex"><img class="rounded-circle img-30 me-3" src="dunzo/images/user/1.jpg" alt="Generic placeholder image">
                                 <div class="flex-grow-1 align-self-center">
                                   <div>Charde Marshall</div>
                                 </div>
@@ -466,7 +468,7 @@
                           </tr>
                           <tr>
                             <td>
-                              <div class="d-flex"><img class="rounded-circle img-30 me-3" src="../assets/images/user/2.png" alt="Generic placeholder image">
+                              <div class="d-flex"><img class="rounded-circle img-30 me-3" src="dunzo/images/user/2.png" alt="Generic placeholder image">
                                 <div class="flex-grow-1 align-self-center">
                                   <div>Haley Kennedy</div>
                                 </div>
@@ -487,7 +489,7 @@
                           </tr>
                           <tr>
                             <td>
-                              <div class="d-flex"><img class="rounded-circle img-30 me-3" src="../assets/images/user/3.png" alt="Generic placeholder image">
+                              <div class="d-flex"><img class="rounded-circle img-30 me-3" src="dunzo/images/user/3.png" alt="Generic placeholder image">
                                 <div class="flex-grow-1 align-self-center">
                                   <div>Tatyana Fitzpatrick</div>
                                 </div>
@@ -508,7 +510,7 @@
                           </tr>
                           <tr>
                             <td>
-                              <div class="d-flex"><img class="rounded-circle img-30 me-3" src="../assets/images/user/4.jpg" alt="Generic placeholder image">
+                              <div class="d-flex"><img class="rounded-circle img-30 me-3" src="dunzo/images/user/4.jpg" alt="Generic placeholder image">
                                 <div class="flex-grow-1 align-self-center">
                                   <div>Michael Silva</div>
                                 </div>
@@ -529,7 +531,7 @@
                           </tr>
                           <tr>
                             <td>
-                              <div class="d-flex"><img class="rounded-circle img-30 me-3" src="../assets/images/user/5.jpg" alt="Generic placeholder image">
+                              <div class="d-flex"><img class="rounded-circle img-30 me-3" src="dunzo/images/user/5.jpg" alt="Generic placeholder image">
                                 <div class="flex-grow-1 align-self-center">
                                   <div>Paul Byrd</div>
                                 </div>
@@ -550,7 +552,7 @@
                           </tr>
                           <tr>
                             <td>
-                              <div class="d-flex"><img class="rounded-circle img-30 me-3" src="../assets/images/user/6.jpg" alt="Generic placeholder image">
+                              <div class="d-flex"><img class="rounded-circle img-30 me-3" src="dunzo/images/user/6.jpg" alt="Generic placeholder image">
                                 <div class="flex-grow-1 align-self-center">
                                   <div>Gloria Little</div>
                                 </div>
@@ -571,7 +573,7 @@
                           </tr>
                           <tr>
                             <td>
-                              <div class="d-flex"><img class="rounded-circle img-30 me-3" src="../assets/images/user/7.jpg" alt="Generic placeholder image">
+                              <div class="d-flex"><img class="rounded-circle img-30 me-3" src="dunzo/images/user/7.jpg" alt="Generic placeholder image">
                                 <div class="flex-grow-1 align-self-center">
                                   <div>Bradley Greer</div>
                                 </div>
@@ -592,7 +594,7 @@
                           </tr>
                           <tr>
                             <td>
-                              <div class="d-flex"><img class="rounded-circle img-30 me-3" src="../assets/images/user/8.jpg" alt="Generic placeholder image">
+                              <div class="d-flex"><img class="rounded-circle img-30 me-3" src="dunzo/images/user/8.jpg" alt="Generic placeholder image">
                                 <div class="flex-grow-1 align-self-center">
                                   <div>Dai Rios</div>
                                 </div>
@@ -613,7 +615,7 @@
                           </tr>
                           <tr>
                             <td>
-                              <div class="d-flex"><img class="rounded-circle img-30 me-3" src="../assets/images/user/9.jpg" alt="Generic placeholder image">
+                              <div class="d-flex"><img class="rounded-circle img-30 me-3" src="dunzo/images/user/9.jpg" alt="Generic placeholder image">
                                 <div class="flex-grow-1 align-self-center">
                                   <div>Jenette Caldwell</div>
                                 </div>
@@ -634,7 +636,7 @@
                           </tr>
                           <tr>
                             <td>
-                              <div class="d-flex"><img class="rounded-circle img-30 me-3" src="../assets/images/user/10.jpg" alt="Generic placeholder image">
+                              <div class="d-flex"><img class="rounded-circle img-30 me-3" src="dunzo/images/user/10.jpg" alt="Generic placeholder image">
                                 <div class="flex-grow-1 align-self-center">
                                   <div>Yuri Berry</div>
                                 </div>
@@ -655,7 +657,7 @@
                           </tr>
                           <tr>
                             <td>
-                              <div class="d-flex"><img class="rounded-circle img-30 me-3" src="../assets/images/user/11.png" alt="Generic placeholder image">
+                              <div class="d-flex"><img class="rounded-circle img-30 me-3" src="dunzo/images/user/11.png" alt="Generic placeholder image">
                                 <div class="flex-grow-1 align-self-center">
                                   <div>Caesar Vance</div>
                                 </div>
@@ -695,3 +697,5 @@
           </div>
           <!-- Container-fluid Ends-->
         </div>
+
+        @include('layout.adminfooter')

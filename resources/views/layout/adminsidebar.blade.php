@@ -164,9 +164,9 @@
                 </div>
               </div>
               <ul class="profile-dropdown onhover-show-div">
-                <li><a href="user-profile.html"><i data-feather="user"></i><span>Account </span></a></li>
-                <li><a href="edit-profile.html"><i data-feather="settings"></i><span>Settings</span></a></li>
-                <li><a href="login.html"><i data-feather="log-in"> </i><span>Log Out</span></a></li>
+                <li><a href="{{ route('profile') }}"><i data-feather="user"></i><span>Account </span></a></li>
+                <li><a href="{{ route('editprofile') }}"><i data-feather="settings"></i><span>Settings</span></a></li>
+                <li><a href="{{ route('logout') }}"><i data-feather="log-in"> </i><span>Log Out</span></a></li>
               </ul>
             </li>
           </ul>
@@ -188,20 +188,20 @@
       <!-- Page Sidebar Start-->
       <div class="sidebar-wrapper" data-layout="fill-svg">
         <div>
-          <div class="logo-wrapper"><a href="#"><img class="img-fluid" src="dunzo/images/logo/logo.png" alt=""></a>
+          <div class="logo-wrapper"><a href="{{ route('adminindex') }}"><img class="img-fluid" src="dunzo/images/logo/logo.png" alt=""></a>
             <div class="toggle-sidebar">
               <svg class="sidebar-toggle">
                 <use href="dunzo/svg/icon-sprite.svg#toggle-icon"></use>
               </svg>
             </div>
           </div>
-          <div class="logo-icon-wrapper"><a href="#"><img class="img-fluid" src="dunzo/images/logo/logo-icon.png"
+          <div class="logo-icon-wrapper"><a href="{{ route('adminindex') }}"><img class="img-fluid" src="dunzo/images/logo/logo-icon.png"
                 alt=""></a></div>
           <nav class="sidebar-main">
             <div class="left-arrow" id="left-arrow"><i data-feather="arrow-left"></i></div>
             <div id="sidebar-menu">
               <ul class="sidebar-links" id="simple-bar">
-                <li class="back-btn"><a href="#"><img class="img-fluid" src="dunzo/images/logo/logo-icon.png"
+                <li class="back-btn"><a href="{{ route('adminindex') }}"><img class="img-fluid" src="dunzo/images/logo/logo-icon.png"
                       alt=""></a>
                   <div class="mobile-back text-end"><span>Back</span><i class="fa fa-angle-right ps-2"
                       aria-hidden="true"></i></div>
@@ -217,7 +217,7 @@
                   </div>
                 </li>
                 <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title link-nav"
-                  href="index.html">
+                  href="{{ route('adminindex') }}">
                   <svg class="stroke-icon">
                     <use href="dunzo/svg/icon-sprite.svg#stroke-home"></use>
                   </svg>
@@ -237,10 +237,23 @@
                     </svg>
                     <svg class="fill-icon">
                       <use href="dunzo/svg/icon-sprite.svg#fill-project"></use>
+                    </svg><span>Home </span></a>
+                  <ul class="sidebar-submenu">
+                    <li><a href="{{ route('home') }}">View List</a></li>
+                    <li><a href="{{ route('createhome') }}">Create Home</a></li>
+                  </ul>
+                </li>
+                <li class="sidebar-list"><i class="fa fa-thumb-tack"> </i><a class="sidebar-link sidebar-title"
+                    href="#">
+                    <svg class="stroke-icon">
+                      <use href="dunzo/svg/icon-sprite.svg#stroke-project"></use>
+                    </svg>
+                    <svg class="fill-icon">
+                      <use href="dunzo/svg/icon-sprite.svg#fill-project"></use>
                     </svg><span>About </span></a>
                   <ul class="sidebar-submenu">
-                    <li><a href="projectcreate.html">View List</a></li>
-                    <li><a href="projectcreate.html">Create Experience</a></li>
+                    <li><a href="{{ route('adminabout') }}">View List</a></li>
+                    <li><a href="{{ route('createabout') }}">Create Experience</a></li>
                   </ul>
                 </li>
                 <li class="sidebar-list"><i class="fa fa-thumb-tack"> </i><a class="sidebar-link sidebar-title"
@@ -252,8 +265,8 @@
                       <use href="dunzo/svg/icon-sprite.svg#fill-project"></use>
                     </svg><span>Services</span></a>
                   <ul class="sidebar-submenu">
-                    <li><a href="projectcreate.html">View List</a></li>
-                    <li><a href="projectcreate.html">Create Services</a></li>
+                    <li><a href="{{ route('adminservice') }}">View List</a></li>
+                    <li><a href="{{ route('createservice') }}">Create Services</a></li>
                   </ul>
                 </li>
                 <li class="sidebar-list"><i class="fa fa-thumb-tack"> </i><a class="sidebar-link sidebar-title"
@@ -265,8 +278,8 @@
                       <use href="dunzo/svg/icon-sprite.svg#fill-project"></use>
                     </svg><span>Portfolio </span></a>
                   <ul class="sidebar-submenu">
-                    <li><a href="projectcreate.html">View List</a></li>
-                    <li><a href="projectcreate.html">Create Portfolio</a></li>
+                    <li><a href="{{ route('adminportfolio') }}">View List</a></li>
+                    <li><a href="{{ route('createportfolio') }}">Create Portfolio</a></li>
                   </ul>
                 </li>
                 <li class="sidebar-list"><i class="fa fa-thumb-tack"> </i><a class="sidebar-link sidebar-title"
@@ -278,19 +291,23 @@
                       <use href="dunzo/svg/icon-sprite.svg#fill-project"></use>
                     </svg><span>Blog </span></a>
                   <ul class="sidebar-submenu">
-                    <li><a href="projectcreate.html">View List</a></li>
-                    <li><a href="projectcreate.html">Create Blog</a></li>
+                    <li><a href="{{ route('adminblog') }}">View List</a></li>
+                    <li><a href="{{ route('createblog') }}">Create Blog</a></li>
                   </ul>
                 </li>
-                <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title link-nav"
-                    href="file-manager.html">
+                <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title"
+                    href="#">
                     <svg class="stroke-icon">
                       <use href="dunzo/svg/icon-sprite.svg#stroke-file"></use>
                     </svg>
                     <svg class="fill-icon">
-                      <use href="dunzo/svg/icon-sprite.svg#fill-file"></use>
+                    <use href="dunzo/svg/icon-sprite.svg#fill-file"></use>
                     </svg><span>Contact</span></a>
-                  </li>
+                      <ul class="sidebar-submenu">
+                        <li><a href="{{ route('admincontact') }}">View Contact</a></li>
+                        <li><a href="{{ route('createcontact') }}">Create Contact</a></li>
+                      </ul>
+                </li>
                 <li class="sidebar-main-title">
                   <div>
                     <h6>System Applications</h6>
@@ -304,9 +321,9 @@
                     <use href="dunzo/svg/icon-sprite.svg#fill-user"></use>
                   </svg><span>Users</span></a>
                 <ul class="sidebar-submenu">
-                  <li><a href="user-profile.html">Users Profile</a></li>
-                  <li><a href="edit-profile.html">Users Edit</a></li>
-                  <li><a href="user-cards.html">Users Cards</a></li>
+                  <li><a href="{{ route('profile') }}">Profile</a></li>
+                  <li><a href="{{ route('editprofile') }}">Profile Edit</a></li>
+                  <li><a href="{{ route('userprofile') }}">Users Cards</a></li>
                 </ul>
               </li>
                 <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title" href="#">
@@ -317,38 +334,38 @@
                       <use href="dunzo/svg/icon-sprite.svg#fill-form"> </use>
                     </svg><span>settings</span></a>
                   <ul class="sidebar-submenu">
-                    <li><a class="submenu-title" href="#">General
+                    <li><a class="submenu-title" href="{{ route('general') }}">General
                         <h5 class="sub-arrow"><i class="fa fa-angle-right"></i></h5>
                       </a>
                     </li>
-                    <li><a class="submenu-title" href="#">Email
+                    <li><a class="submenu-title" href="{{ route('email') }}">Email
                         <h5 class="sub-arrow"><i class="fa fa-angle-right"></i></h5>
                       </a>
                     </li>
-                    <li><a class="submenu-title" href="#">Languages
+                    <li><a class="submenu-title" href="{{ route('languages') }}">Languages
                         <h5 class="sub-arrow"><i class="fa fa-angle-right"></i></h5>
                       </a>
                     </li>
-                    <li><a class="submenu-title" href="#">Backup
+                    <li><a class="submenu-title" href="{{ route('backup') }}">Backup
                         <h5 class="sub-arrow"><i class="fa fa-angle-right"></i></h5>
                       </a>
                     </li>
-                    <li><a class="submenu-title" href="#">Roles
+                    <li><a class="submenu-title" href="{{ route('roles') }}">Roles
                         <h5 class="sub-arrow"><i class="fa fa-angle-right"></i></h5>
                       </a>
                     </li>
-                    <li><a class="submenu-title" href="#">Administration
+                    <li><a class="submenu-title" href="{{ route('administration') }}">Administration
                         <h5 class="sub-arrow"><i class="fa fa-angle-right"></i></h5>
                       </a>
                     </li>
-                    <li><a class="submenu-title" href="#">Mantenance Mood
+                    <li><a class="submenu-title" href="{{ route('mantenance') }}">Mantenance Mood
                         <h5 class="sub-arrow"><i class="fa fa-angle-right"></i></h5>
                       </a>
                     </li>
                   </ul>
                 </li>
                 <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title link-nav"
-                  href="support-ticket.html">
+                  href="{{ route('supportticket') }}">
                   <svg class="stroke-icon">
                     <use href="dunzo/svg/icon-sprite.svg#stroke-support-tickets"></use>
                   </svg>
@@ -357,7 +374,7 @@
                   </svg><span>Support Ticket</span></a>
                 </li>
                 <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title link-nav"
-                  href="#">
+                  href="{{ route('logout') }}">
                   <svg class="stroke-icon">
                     <use href="dunzo/svg/icon-sprite.svg#stroke-support-tickets"></use>
                   </svg>

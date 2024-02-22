@@ -1,3 +1,5 @@
+@include('layout.adminsidebar')
+
 <div class="page-body">
     <div class="container-fluid">
       <div class="page-title">
@@ -10,7 +12,7 @@
             <ol class="breadcrumb">
               <li class="breadcrumb-item"><a href="index-2.html">
                   <svg class="stroke-icon">
-                    <use href="../assets/svg/icon-sprite.svg#stroke-home"></use>
+                    <use href="dunzo/svg/icon-sprite.svg#stroke-home"></use>
                   </svg></a></li>
               <li class="breadcrumb-item">Apps</li>
               <li class="breadcrumb-item active">Blog Create                           </li>
@@ -127,3 +129,4 @@
     </div>
     <!-- Container-fluid Ends-->
   </div>
+  @include('layout.adminfooter')

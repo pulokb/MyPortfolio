@@ -28,18 +28,38 @@ use Illuminate\Support\Facades\Route;
 
     //Admin Routes
 
-    Route::get('about', [AdminControllers::class, 'about'])->name('about');
+    Route::get('adminabout', [AdminControllers::class, 'adminabout'])->name('adminabout');
     Route::get('createabout', [AdminControllers::class, 'createabout'])->name('createabout');
     Route::get('home', [AdminControllers::class, 'home'])->name('home');
     Route::get('createhome', [AdminControllers::class, 'createhome'])->name('createhome');
-    Route::get('blog', [AdminControllers::class, 'blog'])->name('blog');
+    Route::get('adminblog', [AdminControllers::class, 'adminblog'])->name('adminblog');
     Route::get('createblog', [AdminControllers::class, 'createblog'])->name('createblog');
-    Route::get('portfolio', [AdminControllers::class, 'portfolio'])->name('portfolio');
+    Route::get('adminportfolio', [AdminControllers::class, 'adminportfolio'])->name('adminportfolio');
     Route::get('createportfolio', [AdminControllers::class, 'createportfolio'])->name('createportfolio');
-    Route::get('service', [AdminControllers::class, 'service'])->name('service');
+    Route::get('adminservice', [AdminControllers::class, 'adminservice'])->name('adminservice');
     Route::get('createservice', [AdminControllers::class, 'createservice'])->name('createservice');
-    Route::get('contact', [AdminControllers::class, 'contact'])->name('contact');
+    Route::get('admincontact', [AdminControllers::class, 'admincontact'])->name('admincontact');
     Route::get('createcontact', [AdminControllers::class, 'createcontact'])->name('createcontact');
+    Route::get('adminindex', [AdminControllers::class, 'adminindex'])->name('adminindex');
+    Route::get('userprofile', [AdminControllers::class, 'userprofile'])->name('userprofile');
+    Route::get('profile', [AdminControllers::class, 'profile'])->name('profile');
+    Route::get('editprofile', [AdminControllers::class, 'editprofile'])->name('editprofile');
+    Route::get('general', [AdminControllers::class, 'general'])->name('general');
+    Route::get('email', [AdminControllers::class, 'email'])->name('email');
+    Route::get('languages', [AdminControllers::class, 'languages'])->name('languages');
+    Route::get('backup', [AdminControllers::class, 'backup'])->name('backup');
+    Route::get('roles', [AdminControllers::class, 'roles'])->name('roles');
+    Route::get('administration', [AdminControllers::class, 'administration'])->name('administration');
+    Route::get('mantenance', [AdminControllers::class, 'mantenance'])->name('mantenance');
+    Route::get('supportticket', [AdminControllers::class, 'supportticket'])->name('supportticket');
+
+
+
+    Route::get('login', [AdminControllers::class, 'login'])->name('login');
+    Route::get('signup', [AdminControllers::class, 'signup'])->name('signup');
+    Route::get('logout', [AdminControllers::class, 'logout'])->name('logout');
+    Route::get('reset', [AdminControllers::class, 'reset'])->name('reset');
+
 
 
 
