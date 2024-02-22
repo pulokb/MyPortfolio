@@ -4,7 +4,7 @@
     <div class="col-sm-12">
         <div class="card">
             <div class="card-header pb-0 card-no-border">
-                <h4>Abouts</h4>
+                <h4>Basic About</h4>
             </div>
             <div class="card-body">
                 <div class="dt-ext table-responsive custom-scrollbar">
@@ -49,7 +49,7 @@
 
         <div class="card">
             <div class="card-header pb-0 card-no-border">
-                <h4>Abouts Basic</h4>
+                <h4>About Info</h4>
             </div>
             <div class="card-body">
                 <div class="dt-ext table-responsive custom-scrollbar">
@@ -143,7 +143,8 @@
                     <table class="display" id="export-button">
                         <thead>
                             <tr>
-                                <th>Date</th>
+                                <th>Start date</th>
+                                <th>Ends On</th>
                                 <th>Company</th>
                                 <th>Title</th>
                                 <th>Details</th>

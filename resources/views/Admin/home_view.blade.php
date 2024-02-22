@@ -4,7 +4,7 @@
     <div class="col-sm-12">
         <div class="card">
             <div class="card-header pb-0 card-no-border">
-                <h4>Home</h4>
+            <h4>Home</h4>
             </div>
             <div class="card-body">
                 <div class="dt-ext table-responsive custom-scrollbar">
@@ -53,6 +53,7 @@
                         <thead>
                             <tr>
                                 <th>Number</th>
+                                <th>Image</th>
                                 <th>Email</th>
                                 <th>Address</th>
                                 <th>Action</th>
@@ -60,6 +61,7 @@
                         </thead>
                         <tbody>
                             <tr>
+                                <td>Donna Snider</td>
                                 <td>Donna Snider</td>
                                 <td>Customer Support</td>
                                 <td>Customer </td>
