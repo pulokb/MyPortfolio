@@ -30,6 +30,10 @@ use Illuminate\Support\Facades\Route;
 
     Route::get('adminabout', [AdminControllers::class, 'adminabout'])->name('adminabout');
     Route::get('createabout', [AdminControllers::class, 'createabout'])->name('createabout');
+    Route::post('adminabout', [AdminControllers::class, 'store_adminabout'])->name('store_adminabout');
+    Route::get('adminabout/{id}/edit',[AdminControllers::class, 'dedit']);
+    Route::put('adminabout/{id}/edit',[AdminControllers::class, 'dupdate']);
+    Route::get('adminabout/{id}/delete',[AdminControllers::class, 'ddelete']);
     Route::get('home', [AdminControllers::class, 'home'])->name('home');
     Route::get('createhome', [AdminControllers::class, 'createhome'])->name('createhome');
     Route::get('adminblog', [AdminControllers::class, 'adminblog'])->name('adminblog');
@@ -59,9 +63,6 @@ use Illuminate\Support\Facades\Route;
     Route::get('signup', [AdminControllers::class, 'signup'])->name('signup');
     Route::get('logout', [AdminControllers::class, 'logout'])->name('logout');
     Route::get('reset', [AdminControllers::class, 'reset'])->name('reset');
-
-
-
 
 
 

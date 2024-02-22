@@ -117,7 +117,10 @@
                         </ul>
                     </div>
                     <div class="text">
-                        <p>Copyright © 2024 Pulok Biswas. All rights reserved.</p>
+                        <script>
+                            document.write(new Date().getFullYear())
+                        </script> © Pulok Biswas.
+                        <p>All rights reserved.</p>
                     </div>
                 </div>
             </div>
