@@ -26,9 +26,9 @@
                                 <td>Customer Support</td>
                                 <td>
                                     <ul class="action">
-                                        <li class="edit"> <a href="#"><i class="icon-pencil-alt"></i></a>
+                                        <li class="edit"> <a href="{{ url('adminabout/'.$item->id.'/edit') }}"><i class="icon-pencil-alt"></i></a>
                                         </li>
-                                        <li class="delete"><a href="#"><i class="icon-trash"></i></a></li>
+                                        <li class="delete"><a href="{{ url('adminabout/'.$item->id.'/delete') }}"><i class="icon-trash" onclick="return confirm('Are You Sure?')"></i></a></li>
                                     </ul>
                                 </td>
                             </tr>
@@ -71,9 +71,9 @@
                                 <td>Customer Support</td>
                                 <td>
                                     <ul class="action">
-                                        <li class="edit"> <a href="#"><i class="icon-pencil-alt"></i></a>
+                                        <li class="edit"> <a href="{{ url('adminabout/'.$item->id.'/edit') }}"><i class="icon-pencil-alt"></i></a>
                                         </li>
-                                        <li class="delete"><a href="#"><i class="icon-trash"></i></a></li>
+                                        <li class="delete"><a href="{{ url('adminabout/'.$item->id.'/delete') }}"><i class="icon-trash" onclick="return confirm('Are You Sure?')"></i></a></li>
                                     </ul>
                                 </td>
                             </tr>
@@ -114,9 +114,9 @@
                                 <td>Customer Support</td>
                                 <td>
                                     <ul class="action">
-                                        <li class="edit"> <a href="#"><i class="icon-pencil-alt"></i></a>
+                                        <li class="edit"> <a href="{{ url('adminabout/'.$item->id.'/edit') }}"><i class="icon-pencil-alt"></i></a>
                                         </li>
-                                        <li class="delete"><a href="#"><i class="icon-trash"></i></a></li>
+                                        <li class="delete"><a href="{{ url('adminabout/'.$item->id.'/delete') }}"><i class="icon-trash" onclick="return confirm('Are You Sure?')"></i></a></li>
                                     </ul>
                                 </td>
                             </tr>
@@ -159,9 +159,9 @@
                                 <td>Customer Support</td>
                                 <td>
                                     <ul class="action">
-                                        <li class="edit"> <a href="#"><i class="icon-pencil-alt"></i></a>
+                                        <li class="edit"> <a href="{{ url('adminabout/'.$item->id.'/edit') }}"><i class="icon-pencil-alt"></i></a>
                                         </li>
-                                        <li class="delete"><a href="#"><i class="icon-trash"></i></a></li>
+                                        <li class="delete"><a href="{{ url('adminabout/'.$item->id.'/delete') }}"><i class="icon-trash" onclick="return confirm('Are You Sure?')"></i></a></li>
                                     </ul>
                                 </td>
                             </tr>

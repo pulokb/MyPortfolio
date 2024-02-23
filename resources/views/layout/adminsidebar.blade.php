@@ -239,8 +239,9 @@
                       <use href="dunzo/svg/icon-sprite.svg#fill-project"></use>
                     </svg><span>Home </span></a>
                   <ul class="sidebar-submenu">
-                    <li><a href="{{ route('home') }}">View List</a></li>
-                    <li><a href="{{ route('createhome') }}">Create Home</a></li>
+                    <li><a href="{{ route('homeinfo') }}">Home Info</a></li>
+                    <li><a href="{{ route('home') }}">Home Title</a></li>
+                    <li><a href="{{ route('createhome') }}">Create</a></li>
                   </ul>
                 </li>
                 <li class="sidebar-list"><i class="fa fa-thumb-tack"> </i><a class="sidebar-link sidebar-title"
@@ -252,8 +253,11 @@
                       <use href="dunzo/svg/icon-sprite.svg#fill-project"></use>
                     </svg><span>About </span></a>
                   <ul class="sidebar-submenu">
-                    <li><a href="{{ route('adminabout') }}">View List</a></li>
-                    <li><a href="{{ route('createabout') }}">Create Experience</a></li>
+                    <li><a href="{{ route('adminabout') }}">Basic About</a></li>
+                    <li><a href="{{ route('aboutinfo') }}">About Info</a></li>
+                    <li><a href="{{ route('countdown') }}">Countdown</a></li>
+                    <li><a href="{{ route('experience') }}">Experience</a></li>
+                    <li><a href="{{ route('createabout') }}">Create</a></li>
                   </ul>
                 </li>
                 <li class="sidebar-list"><i class="fa fa-thumb-tack"> </i><a class="sidebar-link sidebar-title"
@@ -265,8 +269,8 @@
                       <use href="dunzo/svg/icon-sprite.svg#fill-project"></use>
                     </svg><span>Services</span></a>
                   <ul class="sidebar-submenu">
-                    <li><a href="{{ route('adminservice') }}">View List</a></li>
-                    <li><a href="{{ route('createservice') }}">Create Services</a></li>
+                    <li><a href="{{ route('adminservice') }}">Service List</a></li>
+                    <li><a href="{{ route('createservice') }}">Create</a></li>
                   </ul>
                 </li>
                 <li class="sidebar-list"><i class="fa fa-thumb-tack"> </i><a class="sidebar-link sidebar-title"
@@ -278,8 +282,10 @@
                       <use href="dunzo/svg/icon-sprite.svg#fill-project"></use>
                     </svg><span>Portfolio </span></a>
                   <ul class="sidebar-submenu">
-                    <li><a href="{{ route('adminportfolio') }}">View List</a></li>
-                    <li><a href="{{ route('createportfolio') }}">Create Portfolio</a></li>
+                    <li><a href="{{ route('recent') }}">Recent</a></li>
+                    <li><a href="{{ route('testimonial') }}">Testimonial</a></li>
+                    <li><a href="{{ route('adminportfolio') }}">All Clients</a></li>
+                    <li><a href="{{ route('createportfolio') }}">Create</a></li>
                   </ul>
                 </li>
                 <li class="sidebar-list"><i class="fa fa-thumb-tack"> </i><a class="sidebar-link sidebar-title"
@@ -291,7 +297,7 @@
                       <use href="dunzo/svg/icon-sprite.svg#fill-project"></use>
                     </svg><span>Blog </span></a>
                   <ul class="sidebar-submenu">
-                    <li><a href="{{ route('adminblog') }}">View List</a></li>
+                    <li><a href="{{ route('adminblog') }}">View Blogs</a></li>
                     <li><a href="{{ route('createblog') }}">Create Blog</a></li>
                   </ul>
                 </li>

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Homes;
 use Illuminate\Http\Request;
 
 class AdminControllers extends Controller
@@ -11,16 +12,50 @@ class AdminControllers extends Controller
         return view('Admin.adminindex');
 
     }
+
     public function home(){
 
-        return view('Admin.home_view');
-
+        $homes = Homes::get();
+        return view('Admin.home_view', ['homes' => $homes]);
     }
+
     public function createhome(){
-
         return view('Admin.create_home');
-
     }
+
+    public function store_home(Request $request){
+        $request->validate([
+            'title' => 'required|string',
+            'details' => 'required|string',
+        ]);
+        Homes::create([
+            'title'=> $request->title,
+            'details'=> $request->details,
+        ]);
+        return redirect('home')->with('status','Successfully Created');
+    }
+
+    public function homeedit (int $id){
+        $homes = Homes::findOrFail($id);
+        return view('Admin.homefedit',compact('homes'));
+    }
+    public function homeupdate(Request $request, int $id){
+        $request->validate([
+            'title' => 'required|string',
+            'details' => 'required|string',
+        ]);
+        Homes::create([
+            'title'=> $request->title,
+            'details'=> $request->details,
+        ]);
+        return redirect()->back()->with('status','Successfully Updated');
+    }
+    public function homedelete(int $id){
+        $homes = Homes::findOrFail($id);
+        $homes->delete();
+        return redirect()->back()->with('status','Successfully Deleted');
+    }
+
     public function adminabout(){
 
         return view('Admin.about_view');

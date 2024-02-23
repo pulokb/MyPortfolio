@@ -7,20 +7,24 @@
                 <h3>Home Title</h3>
                 <p class="f-m-light mt-1"></p>
             </div>
-            <form class="form theme-form">
+            @if (session('status'))
+                <div class="alert alert-success">{{ session('status') }}</div>
+            @endif
+            <form class="form theme-form" method="post" action="{{ url('home') }}">
+                @csrf
                 <div class="card-body custom-input">
                     <div class="row">
                         <div class="col">
                             <div class="mb-3 row">
                                 <label class="col-sm-3">Title</label>
                                 <div class="col-sm-9">
-                                    <input class="form-control" type="text" placeholder="Type your title">
+                                    <input class="form-control" type="text" id="title"  name="title" placeholder="Type your title">
                                 </div>
                             </div>
                             <div class="mb-3 row">
                                 <label class="col-sm-3">Details</label>
                                 <div class="col-sm-9">
-                                    <input class="form-control" type="text" placeholder="Enter Details">
+                                    <input class="form-control" type="text" id="details" name="details" placeholder="Enter Details">
                                 </div>
                             </div>
                         </div>
@@ -41,32 +45,36 @@
                 <h3>Home Info</h3>
                 <p class="f-m-light mt-1"></p>
             </div>
-            <form class="form theme-form">
+            @if (session('status'))
+                <div class="alert alert-success">{{ session('status') }}</div>
+            @endif
+            <form class="form theme-form" method="post" action="{{ url('home') }}">
+                @csrf
                 <div class="card-body custom-input">
                     <div class="row">
                         <div class="col">
                             <div class="mb-3 row">
                                 <label class="col-sm-3">Phone Number</label>
                                 <div class="col-sm-9">
-                                    <input class="form-control" type="number" placeholder="Type Phone Number">
+                                    <input class="form-control" type="number" id="phone"  name="phone" placeholder="Type Phone Number">
                                 </div>
                             </div>
                             <div class="mb-3 row">
                                 <label class="col-sm-3">Image</label>
                                 <div class="col-sm-9">
-                                    <input class="form-control" type="file" placeholder="Display Image">
+                                    <input class="form-control" type="file" id="image"  name="image" placeholder="Display Image">
                                 </div>
                             </div>
                             <div class="mb-3 row">
                                 <label class="col-sm-3">Email</label>
                                 <div class="col-sm-9">
-                                  <input class="form-control" type="email" placeholder="Enter Email">
+                                    <input class="form-control" type="email" id="email"  name="email" placeholder="Enter Email">
                                 </div>
-                              </div>
+                            </div>
                             <div class="mb-3 row">
                                 <label class="col-sm-3">Address</label>
                                 <div class="col-sm-9">
-                                    <input class="form-control" type="text" placeholder="Type your Address">
+                                    <input class="form-control" type="text" id="address"  name="address" placeholder="Type your Address">
                                 </div>
                             </div>
                         </div>
