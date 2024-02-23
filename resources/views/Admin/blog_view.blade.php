@@ -4,6 +4,7 @@
     <div class="col-sm-12">
         <div class="card">
             <div class="card-header pb-0 card-no-border">
+                <a href="{{ url('createblog') }}" class="btn btn-primary my-4">Create</a>
                 <h4>Blogs</h4>
             </div>
             <div class="card-body">
@@ -11,6 +12,7 @@
                     <table class="display" id="export-button">
                         <thead>
                             <tr>
+                                <th>ID</th>
                                 <th>Date</th>
                                 <th>Title</th>
                                 <th>Image</th>
@@ -19,22 +21,32 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td>Donna Snider</td>
-                                <td>Customer Support</td>
-                                <td>Customer Support</td>
-                                <td>Customer Support</td>
-                                <td>
-                                    <ul class="action">
-                                        <li class="edit"> <a href="#"><i class="icon-pencil-alt"></i></a>
-                                        </li>
-                                        <li class="delete"><a href="#"><i class="icon-trash"></i></a></li>
-                                    </ul>
-                                </td>
-                            </tr>
+                            @foreach ($blogs as $item)
+                                <tr>
+                                    <td>{{ $item->id }}</td>
+                                    <td>{{ $item->date }}</td>
+                                    <td>{{ $item->title }}</td>
+                                    <td>{{ $item->image }}</td>
+                                    <td>{{ $item->details }}</td>
+
+                                    <td>
+                                        <ul class="action">
+                                            <li class="edit"> <a
+                                                    href="{{ url('adminblog/' . $item->id . '/edit') }}"><i
+                                                        class="icon-pencil-alt"></i></a>
+                                            </li>
+                                            <li class="delete"><a
+                                                    href="{{ url('adminblog/' . $item->id . '/delete') }}"><i
+                                                        class="icon-trash"
+                                                        onclick="return confirm('Are You Sure?')"></i></a></li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            @endforeach
                         </tbody>
                         <tfoot>
                             <tr>
+                                <th>ID</th>
                                 <th>Date</th>
                                 <th>Title</th>
                                 <th>Image</th>

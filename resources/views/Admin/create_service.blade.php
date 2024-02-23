@@ -7,26 +7,30 @@
                 <h3>Service Input</h3>
                 <p class="f-m-light mt-1"></p>
             </div>
-            <form class="form theme-form">
+            @if (session('status'))
+                <div class="alert alert-success">{{ session('status') }}</div>
+            @endif
+            <form class="form theme-form" method="post" action="{{ url('adminservice') }}">
+                @csrf
                 <div class="card-body custom-input">
                     <div class="row">
                         <div class="col">
                             <div class="mb-3 row">
                                 <label class="col-sm-3">Number</label>
                                 <div class="col-sm-9">
-                                    <input class="form-control" type="number" placeholder="Type Serial Number">
+                                    <input class="form-control" type="number" id="number" name="number" placeholder="Type Serial Number">
                                 </div>
                             </div>
                             <div class="mb-3 row">
                                 <label class="col-sm-3">Title</label>
                                 <div class="col-sm-9">
-                                    <input class="form-control" type="text" placeholder="Type A Title">
+                                    <input class="form-control" type="text" id="title" name="title" placeholder="Type A Title">
                                 </div>
                             </div>
                             <div class="mb-3 row">
                                 <label class="col-sm-3">Details</label>
                                 <div class="col-sm-9">
-                                    <input class="form-control" type="text" placeholder="Type Details">
+                                    <input class="form-control" type="text" id="details" name="details" placeholder="Type Details">
                                 </div>
                             </div>
                         </div>

@@ -28,12 +28,12 @@ use Illuminate\Support\Facades\Route;
 
     //Admin Routes
 
-    Route::get('adminabout', [AdminControllers::class, 'adminabout'])->name('adminabout');
-    Route::get('createabout', [AdminControllers::class, 'createabout'])->name('createabout');
-    Route::post('adminabout', [AdminControllers::class, 'store_adminabout'])->name('store_adminabout');
-    Route::get('adminabout/{id}/edit',[AdminControllers::class, 'adminaboutedit']);
-    Route::put('adminabout/{id}/edit',[AdminControllers::class, 'adminaboutup']);
-    Route::get('adminabout/{id}/delete',[AdminControllers::class, 'adminaboutdelete']);
+    Route::get('basicabout', [AdminControllers::class, 'basicabout'])->name('basicabout');
+    Route::get('createbasicabout', [AdminControllers::class, 'createbasicabout'])->name('createbasicabout');
+    Route::post('basicabout', [AdminControllers::class, 'store_basicabout'])->name('store_basicabout');
+    Route::get('basicabout/{id}/edit',[AdminControllers::class, 'basicaboutedit']);
+    Route::put('basicabout/{id}/edit',[AdminControllers::class, 'basicaboutup']);
+    Route::get('basicabout/{id}/delete',[AdminControllers::class, 'basicaboutdelete']);
 
     Route::get('home', [AdminControllers::class, 'home'])->name('home');
     Route::get('createhome', [AdminControllers::class, 'createhome'])->name('createhome');
@@ -43,25 +43,67 @@ use Illuminate\Support\Facades\Route;
     Route::get('home/{id}/delete',[AdminControllers::class, 'homedelete']);
 
     Route::get('homeinfo', [AdminControllers::class, 'homeinfo'])->name('homeinfo');
+    Route::get('createhomeinfo', [AdminControllers::class, 'createhomeinfo'])->name('createhomeinfo');
+    Route::post('homeinfo', [AdminControllers::class, 'store_homeinfo'])->name('store_homeinfo');
+    Route::get('homeinfo/{id}/edit',[AdminControllers::class, 'homeinfoedit']);
+    Route::put('homeinfo/{id}/edit',[AdminControllers::class, 'homeinfoupdate']);
+    Route::get('homeinfo/{id}/delete',[AdminControllers::class, 'homeinfodelete']);
 
     Route::get('aboutinfo', [AdminControllers::class, 'aboutinfo'])->name('aboutinfo');
+    Route::get('createaboutinfo', [AdminControllers::class, 'createaboutinfo'])->name('createaboutinfo');
+    Route::post('aboutinfo', [AdminControllers::class, 'store_aboutinfo'])->name('store_aboutinfo');
+    Route::get('aboutinfo/{id}/edit',[AdminControllers::class, 'aboutinfoedit']);
+    Route::put('aboutinfo/{id}/edit',[AdminControllers::class, 'aboutinfoupdate']);
+    Route::get('aboutinfo/{id}/delete',[AdminControllers::class, 'aboutinfodelete']);
 
     Route::get('countdown', [AdminControllers::class, 'countdown'])->name('countdown');
+    Route::get('createcountdown', [AdminControllers::class, 'createcountdown'])->name('createcountdown');
+    Route::post('countdown', [AdminControllers::class, 'store_countdown'])->name('store_countdown');
+    Route::get('countdown/{id}/edit',[AdminControllers::class, 'countdownedit']);
+    Route::put('countdown/{id}/edit',[AdminControllers::class, 'countdownupdate']);
+    Route::get('countdown/{id}/delete',[AdminControllers::class, 'countdowndelete']);
 
     Route::get('experience', [AdminControllers::class, 'experience'])->name('experience');
-
-    Route::get('testimonial', [AdminControllers::class, 'testimonial'])->name('testimonial');
-
-    Route::get('recent', [AdminControllers::class, 'recent'])->name('recent');
+    Route::get('createexperience', [AdminControllers::class, 'createexperience'])->name('createexperience');
+    Route::post('experience', [AdminControllers::class, 'store_experience'])->name('store_experience');
+    Route::get('experience/{id}/edit',[AdminControllers::class, 'experienceedit']);
+    Route::put('experience/{id}/edit',[AdminControllers::class, 'experienceupdate']);
+    Route::get('experience/{id}/delete',[AdminControllers::class, 'experiencedelete']);
 
     Route::get('adminblog', [AdminControllers::class, 'adminblog'])->name('adminblog');
     Route::get('createblog', [AdminControllers::class, 'createblog'])->name('createblog');
+    Route::post('adminblog', [AdminControllers::class, 'store_adminblog'])->name('store_adminblog');
+    Route::get('adminblog/{id}/edit',[AdminControllers::class, 'adminblogedit']);
+    Route::put('adminblog/{id}/edit',[AdminControllers::class, 'adminblogupdate']);
+    Route::get('adminblog/{id}/delete',[AdminControllers::class, 'adminblogdelete']);
 
     Route::get('adminportfolio', [AdminControllers::class, 'adminportfolio'])->name('adminportfolio');
     Route::get('createportfolio', [AdminControllers::class, 'createportfolio'])->name('createportfolio');
+    Route::post('adminblog', [AdminControllers::class, 'store_adminblog'])->name('store_adminblog');
+    Route::get('adminblog/{id}/edit',[AdminControllers::class, 'adminblogedit']);
+    Route::put('adminblog/{id}/edit',[AdminControllers::class, 'adminblogupdate']);
+    Route::get('adminblog/{id}/delete',[AdminControllers::class, 'adminblogdelete']);
+
+    Route::get('testimonial', [AdminControllers::class, 'testimonial'])->name('testimonial');
+    Route::get('createblog', [AdminControllers::class, 'createblog'])->name('createblog');
+    Route::post('adminblog', [AdminControllers::class, 'store_adminblog'])->name('store_adminblog');
+    Route::get('adminblog/{id}/edit',[AdminControllers::class, 'adminblogedit']);
+    Route::put('adminblog/{id}/edit',[AdminControllers::class, 'adminblogupdate']);
+    Route::get('adminblog/{id}/delete',[AdminControllers::class, 'adminblogdelete']);
+
+    Route::get('recent', [AdminControllers::class, 'recent'])->name('recent');
+    Route::get('createblog', [AdminControllers::class, 'createblog'])->name('createblog');
+    Route::post('adminblog', [AdminControllers::class, 'store_adminblog'])->name('store_adminblog');
+    Route::get('adminblog/{id}/edit',[AdminControllers::class, 'adminblogedit']);
+    Route::put('adminblog/{id}/edit',[AdminControllers::class, 'adminblogupdate']);
+    Route::get('adminblog/{id}/delete',[AdminControllers::class, 'adminblogdelete']);
 
     Route::get('adminservice', [AdminControllers::class, 'adminservice'])->name('adminservice');
     Route::get('createservice', [AdminControllers::class, 'createservice'])->name('createservice');
+    Route::post('adminservice', [AdminControllers::class, 'store_adminservice'])->name('store_adminservice');
+    Route::get('adminservice/{id}/edit',[AdminControllers::class, 'adminserviceedit']);
+    Route::put('adminservice/{id}/edit',[AdminControllers::class, 'adminserviceupdate']);
+    Route::get('adminservice/{id}/delete',[AdminControllers::class, 'adminservicedelete']);
 
     Route::get('admincontact', [AdminControllers::class, 'admincontact'])->name('admincontact');
     Route::get('createcontact', [AdminControllers::class, 'createcontact'])->name('createcontact');

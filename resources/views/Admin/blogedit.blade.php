@@ -26,17 +26,20 @@
             <div class="col-sm-12">
                 <div class="card">
                     <div class="card-body">
+                        <a href="{{ url('adminblog') }}" class="btn btn-primary my-4">Back</a>
                         @if (session('status'))
-                            <div class="alert alert-success">{{ session('status') }}</div>
+                            <div class="alert alert-success"> {{ session('status') }}</div>
                         @endif
-                        <form class="form theme-form" method="post" action="{{ url('adminblog') }}">
+                        <form action="{{ url('adminblog/' . $blogs->id . '/edit') }}" method="POST">
+                            {{ $blogs }}
                             @csrf
+                            @method('PUT')
                             <div class="row">
                                 <div class="col-sm-4">
                                     <div class="mb-3">
                                         <label>Date</label>
                                         <input class="datepicker-here form-control" type="date" id="date"
-                                            name="date" data-language="en">
+                                            name="date" value= "{{ $blogs->date }}" data-language="en">
                                     </div>
                                 </div>
                             </div>
@@ -45,14 +48,14 @@
                                     <div class="mb-3">
                                         <label>Blog Title</label>
                                         <input class="form-control" type="text" id="title" name="title"
-                                            placeholder="Blog name *">
+                                            value= "{{ $blogs->title }}" placeholder="Blog name *">
                                     </div>
                                 </div>
                                 <div class="col">
                                     <div class="mb-3">
                                         <label>Blog Image</label>
                                         <input class="form-control" type="file" id="image" name="image"
-                                            placeholder="Blog Image">
+                                            value= "{{ $blogs->image }}" placeholder="Blog Image">
                                     </div>
                                 </div>
                             </div>
@@ -60,7 +63,8 @@
                                 <div class="col">
                                     <div class="mb-3">
                                         <label>Enter some Details</label>
-                                        <textarea class="form-control" id="exampleFormControlTextarea4" name="details" rows="3"></textarea>
+                                        <textarea class="form-control" id="exampleFormControlTextarea4" name="details" value= "{{ $blogs->details }}"
+                                            rows="3"></textarea>
                                     </div>
                                 </div>
                             </div>

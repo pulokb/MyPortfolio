@@ -4,27 +4,36 @@
     <div class="col-xl-6">
         <div class="card height-equal">
             <div class="card-header pb-0">
-                <h3>Home Title</h3>
+                <h3>Countdown</h3>
                 <p class="f-m-light mt-1"></p>
             </div>
             @if (session('status'))
                 <div class="alert alert-success">{{ session('status') }}</div>
             @endif
-            <form class="form theme-form" method="post" action="{{ url('home') }}">
+            <form class="form theme-form" method="post" action="{{ url('countdown') }}">
                 @csrf
                 <div class="card-body custom-input">
                     <div class="row">
                         <div class="col">
                             <div class="mb-3 row">
-                                <label class="col-sm-3">Title</label>
+                                <label class="col-sm-3">Experience</label>
                                 <div class="col-sm-9">
-                                    <input class="form-control" type="text" id="title"  name="title" placeholder="Type your title">
+                                    <input class="form-control" type="number" id="experience" name="experience"
+                                        placeholder="Enter years of your Experience">
                                 </div>
                             </div>
                             <div class="mb-3 row">
-                                <label class="col-sm-3">Details</label>
+                                <label class="col-sm-3">Projects</label>
                                 <div class="col-sm-9">
-                                    <input class="form-control" type="text" id="details" name="details" placeholder="Enter Details">
+                                    <input class="form-control" type="number" id="projects" name="projects"
+                                        placeholder="Type Number of your Projects">
+                                </div>
+                            </div>
+                            <div class="mb-3 row">
+                                <label class="col-sm-3">Clients</label>
+                                <div class="col-sm-9">
+                                    <input class="form-control" type="number" id="clients" name="clients"
+                                        placeholder="Type number of your Clients">
                                 </div>
                             </div>
                         </div>
@@ -39,6 +48,7 @@
             </form>
         </div>
     </div>
+
 </div>
 
 @include('layout.adminfooter')
