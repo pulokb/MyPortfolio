@@ -30,6 +30,20 @@
                                         placeholder="Type your Title">
                                 </div>
                             </div>
+                            <div class="mb-3 row">
+                                <label class="col-sm-3">Sub Title</label>
+                                <div class="col-sm-9">
+                                    <input class="form-control" type="text" id="subtitle" name="subtitle"
+                                        placeholder="Type your Sub Title">
+                                </div>
+                            </div>
+                            <div class="mb-3 row">
+                                <label class="col-sm-3">Description</label>
+                                <div class="col-sm-9">
+                                    <input class="form-control" type="text" id="description" name="description"
+                                        placeholder="Type your Description">
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

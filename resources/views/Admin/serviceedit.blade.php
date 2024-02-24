@@ -19,10 +19,10 @@
                     <div class="row">
                         <div class="col">
                             <div class="mb-3 row">
-                                <label class="col-sm-3">Number</label>
+                                <label class="col-sm-3">image</label>
                                 <div class="col-sm-9">
-                                    <input class="form-control" type="number" id="number" name="number"
-                                        value= "{{ $services->number }}" placeholder="Type Serial Number">
+                                    <input class="form-control" type="file" id="image" name="image"
+                                        value= "{{ $services->image }}" placeholder="image">
                                 </div>
                             </div>
                             <div class="mb-3 row">

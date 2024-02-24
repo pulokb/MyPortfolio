@@ -11,7 +11,9 @@ class Recents extends Model
 
     protected $fillable = [
         'image',
-        'title'
+        'title',
+        'subtitle',
+        'description'
 
     ];
 }

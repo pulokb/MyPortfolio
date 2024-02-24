@@ -14,6 +14,8 @@
                                 <th>ID</th>
                                 <th>Image</th>
                                 <th>Title</th>
+                                <th>Sub Title</th>
+                                <th>Description</th>
                                 <th>Action</th>
                             </tr>
                         </thead>
@@ -23,6 +25,8 @@
                                 <td>{{ $item->id }}</td>
                                 <td>{{ $item->image }}</td>
                                 <td>{{ $item->title }}</td>
+                                <td>{{ $item->subtitle }}</td>
+                                <td>{{ $item->description }}</td>
                                 <td>
                                     <ul class="action">
                                         <li class="edit"> <a href="{{ url('recent/' . $item->id . '/edit') }}"><i
@@ -38,8 +42,11 @@
                         </tbody>
                         <tfoot>
                             <tr>
+                                <th>ID</th>
                                 <th>Image</th>
                                 <th>Title</th>
+                                <th>Sub Title</th>
+                                <th>Description</th>
                                 <th>Action</th>
                             </tr>
                         </tfoot>

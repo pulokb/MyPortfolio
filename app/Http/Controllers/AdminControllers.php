@@ -285,6 +285,7 @@ class AdminControllers extends Controller
             'company' => 'required|string',
             'title' => 'required|string',
             'details' => 'required|string',
+            'image' => 'required|string',
         ]);
         Experiences::create([
             'start_date'=> $request->start_date,
@@ -292,6 +293,7 @@ class AdminControllers extends Controller
             'company'=> $request->company,
             'title'=> $request->title,
             'details'=> $request->details,
+            'image'=> $request->image,
         ]);
         return redirect('experience')->with('status','Successfully Created');
     }
@@ -307,6 +309,7 @@ class AdminControllers extends Controller
             'company' => 'required|string',
             'title' => 'required|string',
             'details' => 'required|string',
+            'image' => 'required|string',
         ]);
         Experiences::findOrFail($id)->update([
             'start_date'=> $request->start_date,
@@ -314,6 +317,7 @@ class AdminControllers extends Controller
             'company'=> $request->company,
             'title'=> $request->title,
             'details'=> $request->details,
+            'image'=> $request->image,
         ]);
         return redirect()->back()->with('status','Successfully Updated');
     }
@@ -428,10 +432,14 @@ class AdminControllers extends Controller
         $request->validate([
             'image' => 'required|string',
             'title' => 'required|string',
+            'subtitle' => 'required|string',
+            'description' => 'required|string',
         ]);
         Recents::create([
             'image'=> $request->image,
             'title'=> $request->title,
+            'subtitle'=> $request->subtitle,
+            'description'=> $request->description,
         ]);
         return redirect('recent')->with('status','Successfully Created');
     }
@@ -444,10 +452,14 @@ class AdminControllers extends Controller
         $request->validate([
             'image' => 'required|string',
             'title' => 'required|string',
+            'subtitle' => 'required|string',
+            'description' => 'required|string',
         ]);
         Recents::findOrFail($id)->update([
             'image'=> $request->image,
             'title'=> $request->title,
+            'subtitle'=> $request->subtitle,
+            'description'=> $request->description,
         ]);
         return redirect()->back()->with('status','Successfully Updated');
     }
@@ -517,12 +529,12 @@ class AdminControllers extends Controller
     }
     public function store_adminservice(Request $request){
         $request->validate([
-            'number' => 'required|string',
+            'image' => 'required|string',
             'title' => 'required|string',
             'details' => 'required|string',
         ]);
         Services::create([
-            'number'=> $request->number,
+            'image'=> $request->image,
             'title'=> $request->title,
             'details'=> $request->details,
         ]);
@@ -535,12 +547,12 @@ class AdminControllers extends Controller
     }
     public function adminserviceupdate(Request $request, int $id){
         $request->validate([
-            'number' => 'required|string',
+            'image' => 'required|string',
             'title' => 'required|string',
             'details' => 'required|string',
         ]);
         Services::findOrFail($id)->update([
-            'number'=> $request->number,
+            'image'=> $request->image,
             'title'=> $request->title,
             'details'=> $request->details,
         ]);

@@ -17,6 +17,7 @@
                             <th>Company</th>
                             <th>Title</th>
                             <th>Details</th>
+                            <th>Image</th>
                             <th>Action</th>
                         </tr>
                     </thead>
@@ -29,6 +30,7 @@
                                 <td>{{ $item->company }}</td>
                                 <td>{{ $item->title }}</td>
                                 <td>{{ $item->details }}</td>
+                                <td>{{ $item->image }}</td>
 
                                 <td>
                                     <ul class="action">
@@ -51,6 +53,7 @@
                             <th>Company</th>
                             <th>Title</th>
                             <th>Details</th>
+                            <th>Image</th>
                             <th>Action</th>
                         </tr>
                     </tfoot>

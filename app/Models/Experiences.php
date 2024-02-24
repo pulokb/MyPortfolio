@@ -15,6 +15,7 @@ class Experiences extends Model
         'ends_on',
         'company',
         'title',
-        'details'
+        'details',
+        'image'
     ];
 }

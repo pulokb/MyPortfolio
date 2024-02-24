@@ -2,7 +2,16 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Aboutinfos;
+use App\Models\Abouts;
+use App\Models\Blogs;
+use App\Models\Clients;
 use App\Models\Contacts;
+use App\Models\Countdowns;
+use App\Models\Experiences;
+use App\Models\Recents;
+use App\Models\Services;
+use App\Models\Testimonials;
 use Illuminate\Http\Request;
 
 class PortfolioController extends Controller
@@ -13,13 +22,16 @@ class PortfolioController extends Controller
 
     }
     public function about(){
-
-        return view('User.about');
+        $basicabouts = Abouts::get();
+        $aboutinfos = Aboutinfos::get();
+        $countdowns = Countdowns::get();
+        $experiences = Experiences::get();
+        return view('User.about', ['basicabouts' => $basicabouts, 'aboutinfos' => $aboutinfos, 'countdowns' => $countdowns, 'experiences' => $experiences]);
 
     }
     public function blog(){
-
-        return view('User.blog');
+        $blogs = Blogs::get();
+        return view('User.blog', ['blogs' => $blogs]);
 
     }
     public function contact(){
@@ -43,36 +55,19 @@ class PortfolioController extends Controller
         return redirect('contact')->with('status','Successfully Created');
     }
 
-    // public function contactedit (int $id){
-    //     $services = Contacts::findOrFail($id);
-    //     return view('Admin.contact_edit',compact('services'));
-    // }
-    // public function contactup(Request $request, int $id){
-    //     $request->validate([
-    //         'name' => 'required|string',
-    //         'email' => 'required|string',
-    //         'details' => 'required|string',
-    //     ]);
-    //     Contacts::findOrFail($id)->update([
-    //         'name'=> $request->name,
-    //         'email'=> $request->email,
-    //         'details'=> $request->details,
-    //     ]);
-    //     return redirect()->back()->with('status','Successfully Updated');
-    // }
-    // public function contactdelete(int $id){
-    //     $contacts = Contacts::findOrFail($id);
-    //     $contacts->delete();
-    //     return redirect()->back()->with('status','Successfully Deleted');
-    // }
     public function protfolio(){
+        $testimonials = Testimonials::get();
+        $recents = Recents::get();
+        $clients = Clients::get();
 
-        return view('User.protfolio');
+        return view('User.protfolio', ['testimonials' => $testimonials, 'recents' => $recents, 'clients' => $clients]);
+
 
     }
     public function service(){
 
-        return view('User.service');
+        $services = Services::get();
+        return view('User.service', ['services' => $services]);
 
     }
 }

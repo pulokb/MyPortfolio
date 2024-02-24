@@ -18,10 +18,10 @@
                             <a href="tel:+8801793651750">+8801793651750</a>
                         </li>
                         <li>
-                            <a href="mailto:pulok.skoder@gmail.com"><span>pulok.skoder@gmail.com</span></a>
+                            <a href="mailto:pulok.biswas.info@gmail.com"><span>pulok.biswas.info@gmail.com</span></a>
                         </li>
                         <li>
-                            <a class="href_location" href="mailto:pulok.skoder@gmail.com">Katasur, Mohammadpur, 1207
+                            <a class="href_location" href="mailto:pulok.biswas.info@gmail.com">Katasur, Mohammadpur, 1207
                                 Dhaka, Bangladesh</a>
                         </li>
                     </ul>

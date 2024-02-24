@@ -13,7 +13,7 @@
                         <thead>
                             <tr>
                                 <th>ID</th>
-                                <th>Number</th>
+                                <th>Image</th>
                                 <th>Title</th>
                                 <th>Details</th>
                                 <th>Action</th>
@@ -23,7 +23,7 @@
                             @foreach ($services as $item)
                                 <tr>
                                     <td>{{ $item->id }}</td>
-                                    <td>{{ $item->number }}</td>
+                                    <td>{{ $item->image }}</td>
                                     <td>{{ $item->title }}</td>
                                     <td>{{ $item->details }}</td>
 
@@ -45,7 +45,7 @@
                         <tfoot>
                             <tr>
                                 <th>ID</th>
-                                <th>Number</th>
+                                <th>Image</th>
                                 <th>Title</th>
                                 <th>Details</th>
                                 <th>Action</th>

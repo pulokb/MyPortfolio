@@ -50,6 +50,13 @@
                                         placeholder="Type Details About your Experience">
                                 </div>
                             </div>
+                            <div class="mb-3 row">
+                                <label class="col-sm-3">Image</label>
+                                <div class="col-sm-9">
+                                    <input class="form-control" type="file" id="image" name="image"
+                                        placeholder="Image">
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
