@@ -13,6 +13,7 @@
                         <thead>
                             <tr>
                                 <th>ID</th>
+                                <th>Name</th>
                                 <th>Title</th>
                                 <th>Details</th>
                                 <th>Action</th>
@@ -22,6 +23,7 @@
                             @foreach ($homes as $item)
                                 <tr>
                                     <td>{{ $item->id }}</td>
+                                    <td>{{ $item->name }}</td>
                                     <td>{{ $item->title }}</td>
                                     <td>{{ $item->details }}</td>
 
@@ -41,6 +43,7 @@
                         <tfoot>
                             <tr>
                                 <th>ID</th>
+                                <th>Name</th>
                                 <th>Title</th>
                                 <th>Details</th>
                                 <th>Action</th>

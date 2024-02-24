@@ -10,6 +10,7 @@ class Homes extends Model
     use HasFactory;
 
     protected $fillable = [
+        'name',
         'title',
         'details'
 

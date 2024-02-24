@@ -36,10 +36,12 @@ class AdminControllers extends Controller
 
     public function store_home(Request $request){
         $request->validate([
+            'name' => 'required|string',
             'title' => 'required|string',
             'details' => 'required|string',
         ]);
         Homes::create([
+            'name'=> $request->name,
             'title'=> $request->title,
             'details'=> $request->details,
         ]);
@@ -52,10 +54,12 @@ class AdminControllers extends Controller
     }
     public function homeupdate(Request $request, int $id){
         $request->validate([
+            'name' => 'required|string',
             'title' => 'required|string',
             'details' => 'required|string',
         ]);
         Homes::findOrFail($id)->update([
+            'name'=> $request->name,
             'title'=> $request->title,
             'details'=> $request->details,
         ]);

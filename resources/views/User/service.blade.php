@@ -7,7 +7,7 @@
                 <span>- Services</span>
                 <h3>My Services</h3>
             </div>
-            <a href="mailto:pulok.skoder@gmail.com"><span>pulok.skoder@gmail.com</span></a>
+            <a href="mailto:pulok.biswas.info@gmail.com"><span>pulok.biswas.info@gmail.com</span></a>
         </div>
         <div class="service_list">
             <ul>

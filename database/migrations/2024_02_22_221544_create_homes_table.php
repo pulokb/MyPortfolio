@@ -13,6 +13,7 @@ return new class extends Migration
     {
         Schema::create('homes', function (Blueprint $table) {
             $table->id();
+            $table->string('name')->nullable;
             $table->string('title')->nullable;
             $table->string('details')->nullable;
             $table->timestamps();

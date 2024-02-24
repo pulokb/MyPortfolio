@@ -19,6 +19,13 @@
                     <div class="row">
                         <div class="col">
                             <div class="mb-3 row">
+                                <label class="col-sm-3">Name</label>
+                                <div class="col-sm-9">
+                                    <input class="form-control" type="text" id="name" name="name"
+                                        value= "{{ $homes->name }}" placeholder="Type your Name">
+                                </div>
+                            </div>
+                            <div class="mb-3 row">
                                 <label class="col-sm-3">Title</label>
                                 <div class="col-sm-9">
                                     <input class="form-control" type="text" id="title" name="title"

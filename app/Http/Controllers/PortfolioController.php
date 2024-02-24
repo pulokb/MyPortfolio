@@ -9,6 +9,8 @@ use App\Models\Clients;
 use App\Models\Contacts;
 use App\Models\Countdowns;
 use App\Models\Experiences;
+use App\Models\Homeinfos;
+use App\Models\Homes;
 use App\Models\Recents;
 use App\Models\Services;
 use App\Models\Testimonials;
@@ -18,7 +20,9 @@ class PortfolioController extends Controller
 {
     public function index(){
 
-        return view('User.index');
+        $homes = Homes::get();
+        $homeinfos = Homeinfos::get();
+        return view('User.index', ['homes' => $homes], ['homeinfos' => $homeinfos]);
 
     }
     public function about(){
