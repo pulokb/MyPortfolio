@@ -6,11 +6,14 @@ use App\Models\Aboutinfos;
 use App\Models\Abouts;
 use App\Models\Blogs;
 use App\Models\Clients;
+use App\Models\Contacts;
 use App\Models\Countdowns;
 use App\Models\Experiences;
 use App\Models\Homeinfos;
 use App\Models\Homes;
+use App\Models\Recents;
 use App\Models\Services;
+use App\Models\Testimonials;
 use Illuminate\Http\Request;
 
 class AdminControllers extends Controller
@@ -363,6 +366,97 @@ class AdminControllers extends Controller
         return redirect()->back()->with('status','Successfully Deleted');
     }
 
+    public function testimonial(){
+        $testimonials = Testimonials::get();
+        return view('Admin.testimonial', ['testimonials' => $testimonials]);
+
+    }
+    public function createtestimonial(){
+
+        return view('Admin.create_testimonial');
+
+    }
+    public function store_testimonial(Request $request){
+        $request->validate([
+            'name' => 'required|string',
+            'image' => 'required|string',
+            'details' => 'required|string',
+        ]);
+        Testimonials::create([
+            'name'=> $request->name,
+            'image'=> $request->image,
+            'details'=> $request->details,
+        ]);
+        return redirect('testimonial')->with('status','Successfully Created');
+    }
+
+    public function testimonialedit (int $id){
+        $testimonials = Testimonials::findOrFail($id);
+        return view('Admin.testimonial_edit',compact('testimonials'));
+    }
+    public function testimonialupdate(Request $request, int $id){
+        $request->validate([
+            'name' => 'required|string',
+            'image' => 'required|string',
+            'details' => 'required|string',
+        ]);
+        Testimonials::findOrFail($id)->update([
+            'name'=> $request->name,
+            'image'=> $request->image,
+            'details'=> $request->details,
+        ]);
+        return redirect()->back()->with('status','Successfully Updated');
+    }
+    public function testimonialdelete(int $id){
+        $testimonials = Testimonials::findOrFail($id);
+        $testimonials->delete();
+        return redirect()->back()->with('status','Successfully Deleted');
+    }
+
+
+    public function recent(){
+        $recents = Recents::get();
+        return view('Admin.recent', ['recents' => $recents]);
+
+    }
+    public function createrecent(){
+
+        return view('Admin.create_recent');
+
+    }
+    public function store_recent(Request $request){
+        $request->validate([
+            'image' => 'required|string',
+            'title' => 'required|string',
+        ]);
+        Recents::create([
+            'image'=> $request->image,
+            'title'=> $request->title,
+        ]);
+        return redirect('recent')->with('status','Successfully Created');
+    }
+
+    public function recentedit (int $id){
+        $recents = Recents::findOrFail($id);
+        return view('Admin.recent_edit',compact('recents'));
+    }
+    public function recentupdate(Request $request, int $id){
+        $request->validate([
+            'image' => 'required|string',
+            'title' => 'required|string',
+        ]);
+        Recents::findOrFail($id)->update([
+            'image'=> $request->image,
+            'title'=> $request->title,
+        ]);
+        return redirect()->back()->with('status','Successfully Updated');
+    }
+    public function recentelete(int $id){
+        $recents = Recents::findOrFail($id);
+        $recents->delete();
+        return redirect()->back()->with('status','Successfully Deleted');
+    }
+
 
 
     public function adminblog(){
@@ -414,16 +508,6 @@ class AdminControllers extends Controller
         $blogs->delete();
         return redirect()->back()->with('status','Successfully Deleted');
     }
-    public function adminportfolio(){
-
-        return view('Admin.portfolio_view');
-
-    }
-    public function createportfolio(){
-
-        return view('Admin.create_portfolio');
-
-    }
     public function adminservice(){
         $services = Services::get();
         return view('Admin.service_view', ['services' => $services]);
@@ -469,8 +553,8 @@ class AdminControllers extends Controller
     }
 
     public function admincontact(){
-
-        return view('Admin.contact_view');
+        $contacts = Contacts::get();
+        return view('Admin.contact_view', ['contacts' => $contacts]);
 
     }
     public function createcontact(){

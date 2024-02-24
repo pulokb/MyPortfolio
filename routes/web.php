@@ -17,13 +17,32 @@ use Illuminate\Support\Facades\Route;
     // Users Routes
 
     Route::get('/', [PortfolioController::class, 'index'])->name('index');
+
     Route::get('about', [PortfolioController::class, 'about'])->name('about');
+
     Route::get('blog', [PortfolioController::class, 'blog'])->name('blog');
+
     Route::post('blog', [PortfolioController::class, 'blog'])->name('blog');
+
     Route::get('blog', [PortfolioController::class, 'blog'])->name('blog');
+
     Route::get('blog', [PortfolioController::class, 'blog'])->name('blog');
+
     Route::get('contact', [PortfolioController::class, 'contact'])->name('contact');
+    Route::get('createcontact', [PortfolioController::class, 'createcontact'])->name('createcontact');
+    Route::post('contact', [PortfolioController::class, 'store_contact'])->name('store_contact');
+
+    Route::get('contact/{id}/edit',[AdminControllers::class, 'contactedit']);
+    Route::put('contact/{id}/edit',[AdminControllers::class, 'contactup']);
+    Route::get('contact/{id}/delete',[AdminControllers::class, 'contactdelete']);
+
+    Route::get('admincontact', [AdminControllers::class, 'admincontact'])->name('admincontact');
+    Route::get('createcontact', [AdminControllers::class, 'createcontact'])->name('createcontact');
+    Route::post('admincontact', [AdminControllers::class, 'store_admincontact'])->name('store_admincontact');
+
+
     Route::get('protfolio', [PortfolioController::class, 'protfolio'])->name('protfolio');
+
     Route::get('service', [PortfolioController::class, 'service'])->name('service');
 
     //Admin Routes
@@ -105,8 +124,7 @@ use Illuminate\Support\Facades\Route;
     Route::put('adminservice/{id}/edit',[AdminControllers::class, 'adminserviceupdate']);
     Route::get('adminservice/{id}/delete',[AdminControllers::class, 'adminservicedelete']);
 
-    Route::get('admincontact', [AdminControllers::class, 'admincontact'])->name('admincontact');
-    Route::get('createcontact', [AdminControllers::class, 'createcontact'])->name('createcontact');
+
 
     Route::get('adminindex', [AdminControllers::class, 'adminindex'])->name('adminindex');
 

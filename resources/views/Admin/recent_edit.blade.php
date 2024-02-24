@@ -8,12 +8,12 @@
                 <h3>Recent</h3>
                 <p class="f-m-light mt-1"></p>
             </div>
-            <a href="{{ url('homeinfo') }}" class="btn btn-primary my-4">Back</a>
+            <a href="{{ url('recent') }}" class="btn btn-primary my-4">Back</a>
             @if (session('status'))
                 <div class="alert alert-success"> {{ session('status') }}</div>
             @endif
-            <form action="{{ url('homeinfos/' . $homeinfos->id . '/edit') }}" method="POST">
-                {{ $homeinfos }}
+            <form action="{{ url('recent/' . $recents->id . '/edit') }}" method="POST">
+                {{ $recents }}
                 @csrf
                 @method('PUT')
                 <div class="card-body custom-input">
@@ -22,15 +22,15 @@
                             <div class="mb-3 row">
                                 <label class="col-sm-3">Image</label>
                                 <div class="col-sm-9">
-                                    <input class="form-control" type="file" id="experience" name="experience"
-                                        value= "{{ $homeinfos->number }}" placeholder="project Image">
+                                    <input class="form-control" type="file" id="image" name="image"
+                                        value= "{{ $recents->image }}" placeholder="project Image">
                                 </div>
                             </div>
                             <div class="mb-3 row">
                                 <label class="col-sm-3">Title</label>
                                 <div class="col-sm-9">
-                                    <input class="form-control" type="text" id="experience" name="experience"
-                                        value= "{{ $homeinfos->number }}" placeholder="Type your Title">
+                                    <input class="form-control" type="text" id="title" name="title"
+                                        value= "{{ $recents->title }}" placeholder="Type your Title">
                                 </div>
                             </div>
                         </div>

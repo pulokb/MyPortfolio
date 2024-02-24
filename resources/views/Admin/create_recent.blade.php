@@ -11,7 +11,7 @@
             @if (session('status'))
                 <div class="alert alert-success">{{ session('status') }}</div>
             @endif
-            <form class="form theme-form" method="post" action="{{ url('countdown') }}">
+            <form class="form theme-form" method="post" action="{{ url('recent') }}">
                 @csrf
                 <div class="card-body custom-input">
                     <div class="row">
@@ -19,14 +19,14 @@
                             <div class="mb-3 row">
                                 <label class="col-sm-3">Image</label>
                                 <div class="col-sm-9">
-                                    <input class="form-control" type="file" id="experience" name="experience"
+                                    <input class="form-control" type="file" id="image" name="image"
                                         placeholder="project Image">
                                 </div>
                             </div>
                             <div class="mb-3 row">
                                 <label class="col-sm-3">Title</label>
                                 <div class="col-sm-9">
-                                    <input class="form-control" type="text" id="experience" name="experience"
+                                    <input class="form-control" type="text" id="title" name="title"
                                         placeholder="Type your Title">
                                 </div>
                             </div>

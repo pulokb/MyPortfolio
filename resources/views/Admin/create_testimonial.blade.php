@@ -11,7 +11,7 @@
             @if (session('status'))
                 <div class="alert alert-success">{{ session('status') }}</div>
             @endif
-            <form class="form theme-form" method="post" action="{{ url('countdown') }}">
+            <form class="form theme-form" method="post" action="{{ url('testimonial') }}">
                 @csrf
                 <div class="card-body custom-input">
                     <div class="row">
@@ -19,21 +19,21 @@
                             <div class="mb-3 row">
                                 <label class="col-sm-3">Name</label>
                                 <div class="col-sm-9">
-                                    <input class="form-control" type="text" id="experience" name="experience"
+                                    <input class="form-control" type="text" id="name" name="name"
                                         placeholder="Clinet Name">
                                 </div>
                             </div>
                             <div class="mb-3 row">
                                 <label class="col-sm-3">Image</label>
                                 <div class="col-sm-9">
-                                    <input class="form-control" type="file" id="experience" name="experience"
+                                    <input class="form-control" type="file" id="image" name="image"
                                         placeholder="Client Image">
                                 </div>
                             </div>
                             <div class="mb-3 row">
                                 <label class="col-sm-3">Details</label>
                                 <div class="col-sm-9">
-                                    <input class="form-control" type="text" id="experience" name="experience"
+                                    <input class="form-control" type="text" id="details" name="details"
                                         placeholder="Details Testimonial">
                                 </div>
                             </div>
