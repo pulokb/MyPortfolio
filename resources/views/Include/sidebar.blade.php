@@ -37,9 +37,9 @@
 
         <div class="elisc_tm_topbar">
             <div class="topbar_inner">
-                <div class="logo" data-type="image">
-                    {{-- <a class="image" href="#"><img src="elisc/img/logo/logo.png" alt /></a> --}}
-                    <a class="text" href="#"><span>Pulok Biswas</span></a>
+                <div class="logo">
+                    <a href="#"><img src="elisc/img/logo/logo.png" alt /></a>
+                    <a class="text" href="{{ route('index') }}"><span>Pulok Biswas</span></a>
                 </div>
                 <div class="trigger">
                     <div class="hamburger hamburger--slider">
@@ -92,7 +92,9 @@
                         <div class="main" data-img-url="elisc/img/about/1.jpg"></div>
                     </div>
                     <div class="name">
-                        <h3><span>Pulok Biswas<span class="back">Pulok Biswas</span></span></h3>
+                        <h3>
+                        <a class="text" href="{{ route('index') }}"><span>Pulok Biswas<span class="back">Pulok Biswas</span></span></span></a>
+                        </h3>
                     </div>
                 </div>
                 <div class="menu scrollable">
