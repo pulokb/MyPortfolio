@@ -338,36 +338,18 @@
                     </svg>
                     <svg class="fill-icon">
                       <use href="dunzo/svg/icon-sprite.svg#fill-form"> </use>
-                    </svg><span>settings</span></a>
+                    </svg><span>Settings</span></a>
                   <ul class="sidebar-submenu">
-                    <li><a class="submenu-title" href="{{ route('general') }}">General
-                        <h5 class="sub-arrow"><i class="fa fa-angle-right"></i></h5>
-                      </a>
-                    </li>
-                    <li><a class="submenu-title" href="{{ route('email') }}">Email
-                        <h5 class="sub-arrow"><i class="fa fa-angle-right"></i></h5>
-                      </a>
-                    </li>
-                    <li><a class="submenu-title" href="{{ route('languages') }}">Languages
-                        <h5 class="sub-arrow"><i class="fa fa-angle-right"></i></h5>
-                      </a>
-                    </li>
-                    <li><a class="submenu-title" href="{{ route('backup') }}">Backup
-                        <h5 class="sub-arrow"><i class="fa fa-angle-right"></i></h5>
-                      </a>
-                    </li>
-                    <li><a class="submenu-title" href="{{ route('roles') }}">Roles
-                        <h5 class="sub-arrow"><i class="fa fa-angle-right"></i></h5>
-                      </a>
-                    </li>
-                    <li><a class="submenu-title" href="{{ route('administration') }}">Administration
-                        <h5 class="sub-arrow"><i class="fa fa-angle-right"></i></h5>
-                      </a>
-                    </li>
-                    <li><a class="submenu-title" href="{{ route('mantenance') }}">Mantenance Mood
-                        <h5 class="sub-arrow"><i class="fa fa-angle-right"></i></h5>
-                      </a>
-                    </li>
+                    <li><a href="{{ route('general') }}">General Setting</a></i>
+                    <li><a href="{{ route('email') }}">Email Setting</a></i>
+                    <li><a href="{{ route('languages') }}">Languages Setting</a></i>
+                    <li><a href="{{ route('backup') }}">Backup</a></i>
+                    <li><a href="{{ route('roles') }}">Roles</a></i>
+                    <li><a href="{{ route('administration') }}">Administration</a></i>
+                    <li><a href="{{ route('mantenance') }}">Mantenance Mood</a></i>
+                    <li><a href="{{ route('activity') }}">Activity</a></i>
+                    <li><a href="{{ route('visitor') }}">Visitor</a></i>
+                    <li><a href="{{ route('activity_log') }}">Activity Log</a></i>
                   </ul>
                 </li>
                 <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title link-nav"

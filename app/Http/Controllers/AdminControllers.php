@@ -579,37 +579,52 @@ class AdminControllers extends Controller
     }
     public function general(){
 
-        return view('Admin.create_contact');
+        return view('Admin.general');
 
     }
     public function email(){
 
-        return view('Admin.create_contact');
+        return view('Admin.email');
 
     }
     public function languages(){
 
-        return view('Admin.create_contact');
+        return view('Admin.languages');
 
     }
     public function backup(){
 
-        return view('Admin.create_contact');
+        return view('Admin.backup');
 
     }
     public function roles(){
 
-        return view('Admin.create_contact');
+        return view('Admin.roles');
 
     }
     public function administration(){
 
-        return view('Admin.create_contact');
+        return view('Admin.administration');
 
     }
     public function mantenance(){
 
-        return view('Admin.maintenance');
+        return view('Admin.mantenance');
+
+    }
+    public function activity(){
+
+        return view('Admin.activity');
+
+    }
+    public function visitor(){
+
+        return view('Admin.visitor');
+
+    }
+    public function activity_log(){
+
+        return view('Admin.activity_log');
 
     }
     public function supportticket(){

@@ -139,6 +139,9 @@ use Illuminate\Support\Facades\Route;
     Route::get('administration', [AdminControllers::class, 'administration'])->name('administration');
     Route::get('mantenance', [AdminControllers::class, 'mantenance'])->name('mantenance');
     Route::get('supportticket', [AdminControllers::class, 'supportticket'])->name('supportticket');
+    Route::get('activity', [AdminControllers::class, 'activity'])->name('activity');
+    Route::get('visitor', [AdminControllers::class, 'visitor'])->name('visitor');
+    Route::get('activity_log', [AdminControllers::class, 'activity_log'])->name('activity_log');
 
 
 
