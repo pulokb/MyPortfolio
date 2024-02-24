@@ -77,26 +77,26 @@ use Illuminate\Support\Facades\Route;
     Route::put('adminblog/{id}/edit',[AdminControllers::class, 'adminblogupdate']);
     Route::get('adminblog/{id}/delete',[AdminControllers::class, 'adminblogdelete']);
 
-    Route::get('adminportfolio', [AdminControllers::class, 'adminportfolio'])->name('adminportfolio');
-    Route::get('createportfolio', [AdminControllers::class, 'createportfolio'])->name('createportfolio');
-    Route::post('adminblog', [AdminControllers::class, 'store_adminblog'])->name('store_adminblog');
-    Route::get('adminblog/{id}/edit',[AdminControllers::class, 'adminblogedit']);
-    Route::put('adminblog/{id}/edit',[AdminControllers::class, 'adminblogupdate']);
-    Route::get('adminblog/{id}/delete',[AdminControllers::class, 'adminblogdelete']);
+    Route::get('client', [AdminControllers::class, 'client'])->name('client');
+    Route::get('createclient', [AdminControllers::class, 'createclient'])->name('createclient');
+    Route::post('client', [AdminControllers::class, 'store_client'])->name('store_client');
+    Route::get('client/{id}/edit',[AdminControllers::class, 'clientedit']);
+    Route::put('client/{id}/edit',[AdminControllers::class, 'clientupdate']);
+    Route::get('client/{id}/delete',[AdminControllers::class, 'clientdelete']);
 
     Route::get('testimonial', [AdminControllers::class, 'testimonial'])->name('testimonial');
-    Route::get('createblog', [AdminControllers::class, 'createblog'])->name('createblog');
-    Route::post('adminblog', [AdminControllers::class, 'store_adminblog'])->name('store_adminblog');
-    Route::get('adminblog/{id}/edit',[AdminControllers::class, 'adminblogedit']);
-    Route::put('adminblog/{id}/edit',[AdminControllers::class, 'adminblogupdate']);
-    Route::get('adminblog/{id}/delete',[AdminControllers::class, 'adminblogdelete']);
+    Route::get('createtestimonial', [AdminControllers::class, 'createtestimonial'])->name('createtestimonial');
+    Route::post('testimonial', [AdminControllers::class, 'store_testimonial'])->name('store_testimonial');
+    Route::get('testimonial/{id}/edit',[AdminControllers::class, 'testimonialedit']);
+    Route::put('testimonial/{id}/edit',[AdminControllers::class, 'testimonialupdate']);
+    Route::get('testimonial/{id}/delete',[AdminControllers::class, 'testimonialdelete']);
 
     Route::get('recent', [AdminControllers::class, 'recent'])->name('recent');
-    Route::get('createblog', [AdminControllers::class, 'createblog'])->name('createblog');
-    Route::post('adminblog', [AdminControllers::class, 'store_adminblog'])->name('store_adminblog');
-    Route::get('adminblog/{id}/edit',[AdminControllers::class, 'adminblogedit']);
-    Route::put('adminblog/{id}/edit',[AdminControllers::class, 'adminblogupdate']);
-    Route::get('adminblog/{id}/delete',[AdminControllers::class, 'adminblogdelete']);
+    Route::get('createrecent', [AdminControllers::class, 'createrecent'])->name('createrecent');
+    Route::post('recent', [AdminControllers::class, 'store_recent'])->name('store_recent');
+    Route::get('recent/{id}/edit',[AdminControllers::class, 'recentedit']);
+    Route::put('recent/{id}/edit',[AdminControllers::class, 'recentupdate']);
+    Route::get('recent/{id}/delete',[AdminControllers::class, 'recentelete']);
 
     Route::get('adminservice', [AdminControllers::class, 'adminservice'])->name('adminservice');
     Route::get('createservice', [AdminControllers::class, 'createservice'])->name('createservice');

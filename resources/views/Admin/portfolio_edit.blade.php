@@ -7,11 +7,14 @@
                 <h3>Clients Info</h3>
                 <p class="f-m-light mt-1"></p>
             </div>
+            <a href="{{ url('client') }}" class="btn btn-primary my-4">Back</a>
             @if (session('status'))
-                <div class="alert alert-success">{{ session('status') }}</div>
+                <div class="alert alert-success"> {{ session('status') }}</div>
             @endif
-            <form class="form theme-form" method="post" action="{{ url('client') }}">
+            <form action="{{ url('client/' . $clients->id . '/edit') }}" method="POST">
+                {{ $clients }}
                 @csrf
+                @method('PUT')
                 <div class="card-body custom-input">
                     <div class="row">
                         <div class="col">
@@ -19,14 +22,14 @@
                                 <label class="col-sm-3">Name</label>
                                 <div class="col-sm-9">
                                     <input class="form-control" type="text" id="name" name="name"
-                                        placeholder="Type Client Name">
+                                        value= "{{ $clients->name }}" placeholder="Type Client Name">
                                 </div>
                             </div>
                             <div class="mb-3 row">
                                 <label class="col-sm-3">Image</label>
                                 <div class="col-sm-9">
                                     <input class="form-control" type="file" id="image" name="image"
-                                        placeholder="Client Image">
+                                        value= "{{ $clients->image }}" placeholder="Client Image">
                                 </div>
                             </div>
                         </div>

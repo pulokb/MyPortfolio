@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Aboutinfos;
 use App\Models\Abouts;
 use App\Models\Blogs;
+use App\Models\Clients;
 use App\Models\Countdowns;
 use App\Models\Experiences;
 use App\Models\Homeinfos;
@@ -316,6 +317,49 @@ class AdminControllers extends Controller
     public function experiencedelete(int $id){
         $experiences = Experiences::findOrFail($id);
         $experiences->delete();
+        return redirect()->back()->with('status','Successfully Deleted');
+    }
+
+    public function client(){
+        $clients = Clients::get();
+        return view('Admin.portfolio_view', ['clients' => $clients]);
+
+    }
+    public function createclient(){
+
+        return view('Admin.create_portfolio');
+
+    }
+    public function store_client(Request $request){
+        $request->validate([
+            'name' => 'required|string',
+            'image' => 'required|string',
+        ]);
+        Clients::create([
+            'name'=> $request->name,
+            'image'=> $request->image,
+        ]);
+        return redirect('client')->with('status','Successfully Created');
+    }
+
+    public function clientedit (int $id){
+        $clients = Experiences::findOrFail($id);
+        return view('Admin.experience_edit',compact('clients'));
+    }
+    public function clientupdate(Request $request, int $id){
+        $request->validate([
+            'name' => 'required|string',
+            'image' => 'required|string',
+        ]);
+        Clients::findOrFail($id)->update([
+            'name'=> $request->name,
+            'image'=> $request->image,
+        ]);
+        return redirect()->back()->with('status','Successfully Updated');
+    }
+    public function clientdelete(int $id){
+        $clients = Clients::findOrFail($id);
+        $clients->delete();
         return redirect()->back()->with('status','Successfully Deleted');
     }
 

@@ -284,7 +284,7 @@
                   <ul class="sidebar-submenu">
                     <li><a href="{{ route('recent') }}">Recent</a></li>
                     <li><a href="{{ route('testimonial') }}">Testimonial</a></li>
-                    <li><a href="{{ route('adminportfolio') }}">All Clients</a></li>
+                    <li><a href="{{ route('client') }}">All Clients</a></li>
                     {{-- <li><a href="{{ route('createportfolio') }}">Create</a></li> --}}
                   </ul>
                 </li>
